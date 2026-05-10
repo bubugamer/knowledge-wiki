@@ -1,0 +1,118 @@
+site_name: Knowledge Wiki
+site_description: 个人知识 Wiki —— 持续维护的结构化知识库
+docs_dir: docs
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - roamlinks
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/custom.css
+
+nav:
+  - 首页: index.md
+  - 人工智能 / 大模型:
+    - 总览与框架:
+      - AI技术体系总览: AI技术体系总览.md
+      - 学习范式: 学习范式-LearningParadigm.md
+      - 模型架构: 模型架构-ModelArchitecture.md
+      - MoE-混合专家模型: MoE-混合专家模型.md
+      - AI系统形态: AI系统形态-SystemArchitecture.md
+      - LLM训练四阶段总览: LLM训练四阶段总览.md
+      - OpenAI五级智能分类: OpenAI五级智能分类.md
+      - Agent三阶段演变: Agent三阶段演变.md
+    - 训练阶段:
+      - 预训练: 预训练-Pretraining.md
+      - SFT-有监督微调: SFT-有监督微调.md
+      - Alignment-对齐: Alignment-对齐.md
+      - 推理训练-CoT: 推理训练-CoT.md
+    - 方法与对比:
+      - RLHF vs DPO: RLHF-vs-DPO.md
+      - PEFT-LoRA: PEFT-LoRA.md
+      - 下半场-任务与Reward设计: 下半场-任务与Reward设计.md
+      - 表征学习: 表征学习-RepresentationLearning.md
+    - 应用架构:
+      - RAG-检索增强生成: RAG-检索增强生成.md
+      - 向量数据库: 向量数据库-VectorDatabase.md
+      - 微调 vs RAG 决策: 微调vs RAG-决策.md
+      - REACT-推理与行动架构: REACT-推理与行动架构.md
+      - Code-AI的Affordance: Code-AI的Affordance.md
+      - JEPA-联合嵌入预测架构: JEPA-联合嵌入预测架构.md
+    - 多模态:
+      - 多模态融合-生成理解割裂: 多模态融合-生成理解割裂.md
+      - 视觉空间推理: 视觉空间推理-多模态GPT-4时刻.md
+    - 机器人与具身智能:
+      - 具身智能: 具身智能-EmbodiedAI.md
+      - VLA-视觉语言动作模型: VLA-视觉语言动作模型.md
+      - 跨本体: 跨本体-CrossEmbodiment.md
+      - Sim-to-Real: Sim-to-Real.md
+    - 前沿议题与展望:
+      - NTP的本质缺陷: NTP的本质缺陷.md
+      - LongContext与分层记忆: LongContext与分层记忆.md
+      - 自主学习与在线学习: 自主学习与在线学习.md
+      - 世界模型: 世界模型-WorldModel.md
+    - 参考:
+      - LLM术语速查: LLM术语速查.md
+      - Bitter Lesson: Bitter-Lesson.md
+      - Moravec悖论: Moravec悖论.md
+  - AI 产品与公司:
+    - Dify-开源LLM应用平台: Dify-开源LLM应用平台.md
+    - LangGenius-Dify母公司: LangGenius-Dify母公司.md
+    - 张路宇-Dify创始人: 张路宇-Dify创始人.md
+  - 活动日志: log.md

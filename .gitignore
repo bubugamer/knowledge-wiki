@@ -1,0 +1,15 @@
+# MkDocs build output
+site/
+
+# Python virtual environment
+.venv/
+
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
