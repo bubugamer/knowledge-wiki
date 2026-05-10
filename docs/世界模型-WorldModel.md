@@ -87,7 +87,7 @@ LLM 具备一定的世界模型 behavior，但作为世界模型根本性有缺�
 
 这反驳了"LLM 拿 IMO 金牌已经很厉害"的叙事：IMO 金牌只在人类自大视角下算"难题"，站在 530 million years 的演化尺度看，重新造一只松鼠比最后 8 秒里人类文明造出的东西要伟大得多。见 [[Moravec悖论]]。
 
-## Related Pages
+## 相关页面
 
 - [[JEPA-联合嵌入预测架构]] — 抽象表征派的具体架构
 - [[表征学习-RepresentationLearning]] — 世界模型的底层

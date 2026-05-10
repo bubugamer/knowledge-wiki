@@ -12,7 +12,7 @@ sources:
 
 > Dify 是一个开源全栈 LLM 应用开发平台，把可视化 Workflow、RAG、Agent、Plugin、MCP、LLMOps 打包成统一体验，目标是让团队从原型到生产部署一站完成。
 
-## What It Is
+## 定义
 
 Dify（由 LangGenius 运营）是一个面向企业和开发者的 AI 应用开发平台。它不是单点工具或底层框架，而是把"搭建 → 接模型 → 接知识 → 接工具 → 调试 → 观测 → 发布 → 企业部署"的完整路径做成统一产品。
 
@@ -21,7 +21,7 @@ Dify（由 LangGenius 运营）是一个面向企业和开发者的 AI 应用开
 - **代码构成**：TypeScript 52.8% + Python 42.6%
 - **Release**：161 releases，最新 v1.13.3（2026-03-27）
 
-## How It Works
+## 工作原理
 
 ### 核心能力
 
@@ -54,7 +54,7 @@ Dify（由 LangGenius 运营）是一个面向企业和开发者的 AI 应用开
 
 支持 Docker Compose、Kubernetes（Helm/YAML）、Terraform（Azure/GCP）、AWS CDK（EKS/ECS）、Alibaba Cloud。
 
-## Key Properties
+## 核心特性
 
 - **定位一句话**："不是最底层的 framework，也不是最广义的 automation hub，而是强调可视化开发、生产部署、私有化主权和企业落地的一体化 AI 应用平台"
 - **用户规模**：10,000+ 团队，150+ 国家，60+ 行业，1M+ Applications（官网口径）
@@ -69,7 +69,7 @@ Dify 内置了完整的 RAG pipeline 作为核心模块之一。它不是单独�
 
 <!-- status: 草稿 — 数据主要来自 GPT 生成的调研报告，核心数字需回源核验 -->
 
-## Related Pages
+## 相关页面
 
 - [[RAG-检索增强生成]] — Dify 的核心模块之一，内置完整 RAG pipeline
 - [[Agent三阶段演变]] — Dify 的 Agent 模块对应 LLM+推理阶段

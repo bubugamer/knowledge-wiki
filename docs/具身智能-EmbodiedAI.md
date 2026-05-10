@@ -77,7 +77,7 @@ sources:
 | [[多模态融合-生成理解割裂]] | 具身智能必须打通感知→行动，不能停在 "看懂 ≠ 做对" |
 | [[Code-AI的Affordance]] | 物理世界是机器人的 affordance，code 是数字 agent 的 affordance |
 
-## Related Pages
+## 相关页面
 
 - [[VLA-视觉语言动作模型]] — "小脑"的主流架构
 - [[跨本体-CrossEmbodiment]] — scale 的关键约束

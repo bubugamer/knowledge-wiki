@@ -76,7 +76,7 @@ LeCun 从 2016 年起就押注这条路线——这也是 AMI Labs 的精神底�
 
 NAS（Neural Architecture Search）的错误在于——把研究 energy 投入到"改架构"而不是"改表征目标函数"。架构只是服务于算法的载体。这与张祥雨 "架构不重要，它服务于算法" 的判断一致（见 [[LongContext与分层记忆]]）。
 
-## Related Pages
+## 相关页面
 
 - [[JEPA-联合嵌入预测架构]] — 第三条 SSL 路线
 - [[世界模型-WorldModel]] — 表征是世界模型的基础

@@ -69,7 +69,7 @@ sources:
 
 决策依据见 [[微调vs RAG-决策]]。
 
-## Related Pages
+## 相关页面
 
 - [[向量数据库-VectorDatabase]] — 第 3/4 步的核心基础设施；索引算法与产品选型
 - [[微调vs RAG-决策]] — 知识问答场景的选型决策

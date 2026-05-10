@@ -56,7 +56,7 @@ BERT 时代把语言任务建模成"选择题"。但 Agent 的动作空间是开
 
 前两代都是 ReAct 结构，区别在工具调用是 prompt 还是 RL 训出。
 
-## Related Pages
+## 相关页面
 
 - [[Agent三阶段演变]] — ReAct 是第三代 Agent 的起点
 - [[推理训练-CoT]] — ReAct 的"Thought"那一步与 CoT 是同一思想

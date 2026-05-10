@@ -58,7 +58,7 @@ sources:
 
 JEPA 在抽象表征空间里做预测，表面上引入了"不做像素"的结构先验，有人因此说它 anti-bitter-lesson。但谢赛宁的反论点：**LLM 才是 anti-bitter-lesson**——语言本身就是人类几千年设计出的极强结构。JEPA 反而丢掉了这层人工结构，交给数据自己学。见 [[Bitter-Lesson]]。
 
-## Related Pages
+## 相关页面
 
 - [[世界模型-WorldModel]] — JEPA 是"抽象表征派"的具体架构
 - [[表征学习-RepresentationLearning]] — JEPA 是第三条 SSL 路线

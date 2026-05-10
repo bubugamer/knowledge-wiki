@@ -299,7 +299,7 @@ Deployment (Adapter 组合 → 上线)
 6. **World Model vs Video Generation**：生成视频只要"看起来对"就行；World Model 要求"给 action 能预测下一帧"（交互性）。见 [[世界模型-WorldModel]]。
 7. **Transformer vs Diffusion**：不是同一层面的概念。Transformer 是骨架架构（类似"发动机类型"），Diffusion 是生成范式（类似"驱动方式"）。DiT 就是 Transformer 骨架 + Diffusion 范式的组合。
 
-## Related Pages
+## 相关页面
 
 - [[LLM训练四阶段总览]] — 这些术语如何串成一条链路
 - [[预训练-Pretraining]]

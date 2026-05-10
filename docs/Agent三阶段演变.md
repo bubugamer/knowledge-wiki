@@ -47,7 +47,7 @@ sources:
 
 两者有代际差异，详见 [[OpenAI五级智能分类]]。
 
-## Related Pages
+## 相关页面
 
 - [[OpenAI五级智能分类]] — 三阶段大致映射到 L1/L2/L3
 - [[REACT-推理与行动架构]] — 第三代 Agent 的标志性架构

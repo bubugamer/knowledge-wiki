@@ -10,7 +10,7 @@ sources: []
 
 > 神经网络"长什么样"——当前主流的 11 种模型架构，从经典 MLP 到前沿 SSM 和 MoE。
 
-## What It Is
+## 定义
 
 模型架构定义了神经网络的**计算图结构**——数据如何流动、信息如何聚合、参数如何组织。架构选择决定了模型擅长处理什么类型的数据和任务。
 
@@ -51,13 +51,13 @@ $$x_t = \sqrt{1-\beta_t} \cdot x_{t-1} + \sqrt{\beta_t} \cdot \epsilon$$
 - **SSM 是效率挑战者**：Mamba 等模型在长序列上有 O(n) 优势，但尚未撼动 Transformer 在 LLM 上的地位
 - **MoE 是规模化方案**：不增加推理成本的情况下扩大模型容量（GPT-4、Mixtral、DeepSeek-V3）——详见 [[MoE-混合专家模型]]
 
-## Common Misconceptions
+## 常见误解
 
 - "Transformer 会被 SSM 替代" — 目前更可能的结局是混合架构（Transformer + SSM），而非完全替代
 - "Diffusion 只能做图像" — 已扩展到视频、3D、音频、蛋白质结构等
 - "MoE 是新发明" — 概念来自 1991 年，是近年工程突破（路由稳定性、负载均衡）让它在超大规模成为可行。详见 [[MoE-混合专家模型]]
 
-## Related Pages
+## 相关页面
 
 - [[AI技术体系总览]] — 本页所属的九层框架
 - [[表征学习-RepresentationLearning]] — VAE 和 SSL 路线的深入探讨

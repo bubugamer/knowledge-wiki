@@ -44,7 +44,7 @@ sources:
 
 工程语义：基础模型是"能力地基"，SFT Adapter 是"说话方式"的插件。
 
-## Related Pages
+## 相关页面
 
 - [[LLM训练四阶段总览]] — SFT 在整条链路中的位置
 - [[Alignment-对齐]] — SFT 之后的"价值观精雕"

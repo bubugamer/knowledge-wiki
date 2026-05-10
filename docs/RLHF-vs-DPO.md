@@ -86,7 +86,7 @@ Rubix / Reward Model 都是**外部监督**。但人类的价值判断更多来�
 
 这解释了为什么 O 系列推理能力的 RL 训练不再用 RLHF，而是用规则化的白盒 reward（math 答案唯一、code 通过测试用例）。
 
-## Related Pages
+## 相关页面
 
 - [[Alignment-对齐]] — 总体概念与企业定位
 - [[SFT-有监督微调]] — 对齐之前的阶段

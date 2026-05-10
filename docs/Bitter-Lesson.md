@@ -55,7 +55,7 @@ sources:
 - 批评 Neural Architecture Search、复杂 inductive bias（见 [[表征学习-RepresentationLearning]]）
 - 辩论 LLM 是否是 endgame（谢赛宁 vs LLM 派）
 
-## Related Pages
+## 相关页面
 
 - [[世界模型-WorldModel]] — 不同流派对 bitter lesson 的理解分歧
 - [[JEPA-联合嵌入预测架构]] — 谢赛宁认为更 bitter lesson 的路线

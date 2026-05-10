@@ -75,7 +75,7 @@ VLA 输出"动作"有多种编码方式，近年基本收敛到三类：
 
 谭捷给出的架构演进猜想——下一代可能不直接输出 action，而是输出"下一帧图像"（V+L→V），把 world model 作为中间表征，action 从 world model 里规划出来。这就自然连到了 [[世界模型-WorldModel]] 和 [[JEPA-联合嵌入预测架构]] 的路线。
 
-## Related Pages
+## 相关页面
 
 - [[跨本体-CrossEmbodiment]] — Motion Transfer 是 VLA 跨机器人迁移的关键技术
 - [[Sim-to-Real]] — VLA 的数据来源策略

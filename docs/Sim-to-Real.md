@@ -91,7 +91,7 @@ sources:
 - Manipulation：柔软物体 + 多指接触 + 摩擦 + 视觉依赖——**所有仿真难点的交集**
 - 谭捷预测：2-3 年内随 video gen + 真机数据混训，manipulation 会突破——详见 [[具身智能-EmbodiedAI]]
 
-## Related Pages
+## 相关页面
 
 - [[VLA-视觉语言动作模型]] — 使用 sim 数据训练的主流方式
 - [[跨本体-CrossEmbodiment]] — 另一条 scale 路径

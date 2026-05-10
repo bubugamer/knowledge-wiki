@@ -10,13 +10,13 @@ sources: []
 
 > 一种稀疏计算架构——模型拥有大量参数，但每次推理只激活少数几个"专家"，实现"总参数很大，实际计算量没那么大"。
 
-## What It Is
+## 定义
 
 传统 Dense 模型的问题：参数越大，每次推理越贵，因为所有参数都参与计算。
 
 MoE 的思路：把原本一个 FFN（Feed-Forward Network）拆成多个专家网络，由 Router 决定当前 token 该交给哪些专家处理。例如 DeepSeek-V3 总参数 671B，但每个 token 只激活 37B 参数。
 
-## How It Works
+## 工作原理
 
 ### Expert 不是完整模型
 
@@ -60,13 +60,13 @@ DeepSeek 的核心策略不是"把模型做大"，而是**"如何更低成本地
 
 DeepSeek-R1-Zero 在几乎没有 SFT 冷启动的情况下，仅通过 RL 让模型逐渐涌现出长链推理、自我反思、自我验证等行为——这说明 reasoning 不一定必须靠大量人工标注数据堆出来，可以通过 RL 逐渐自我演化。
 
-## Common Misconceptions
+## 常见误解
 
 - "MoE 是新发明" — 概念来自 1991 年（Jacobs et al.），是近年工程突破（路由稳定性、负载均衡、通信优化）让它在超大规模成为可行
 - "Expert 是完整的子模型" — Expert 通常只是 FFN 模块，不是独立的 Transformer
 - "专家有明确分工" — 专业化是涌现的，不是预设的
 
-## Related Pages
+## 相关页面
 
 - [[模型架构-ModelArchitecture]] — MoE 在架构全景中的位置
 - [[推理训练-CoT]] — RL reasoning 路线（DeepSeek-R1）的训练方法

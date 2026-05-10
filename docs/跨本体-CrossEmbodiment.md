@@ -71,7 +71,7 @@ Motion Transfer = 通过架构和训练 recipe 的修改，让模型自然学会
 - 厂商 B 的新本体 → 上来就能用联合模型的先验
 - 数据飞轮才能转起来
 
-## Related Pages
+## 相关页面
 
 - [[VLA-视觉语言动作模型]] — Motion Transfer 是 VLA 的一个能力
 - [[Sim-to-Real]] — 另一条 scale 路径（同构：数据的跨域迁移）

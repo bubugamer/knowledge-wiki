@@ -64,7 +64,7 @@ Agent 任务还可按深度 × 广度划分：
 
 真实世界的 reward 是**时间累积的，不是平行采样的**。这是为什么 [[自主学习与在线学习]] 是终极问题。
 
-## Related Pages
+## 相关页面
 
 - [[RLHF-vs-DPO]] — Reward 三原则的反例（人类偏好违反第 2 条）
 - [[Code-AI的Affordance]] — Code 天然满足 Reward 三原则

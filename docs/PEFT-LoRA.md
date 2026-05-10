@@ -58,7 +58,7 @@ Base Model @ version X
 
 这种显式记录使得"哪个版本的模型对外服务、由谁负责"成为可审计事实。上线阶段的关键不再是技术，而是**责任归属**——训练管线的终点是 Checkpoint，发布管线的终点是"被允许对外使用、并有人负责的模型资产"。
 
-## Related Pages
+## 相关页面
 
 - [[SFT-有监督微调]] — PEFT 最常见的应用阶段
 - [[Alignment-对齐]] — PEFT 产出的 Safety/Preference Adapter

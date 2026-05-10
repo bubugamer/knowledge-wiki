@@ -55,7 +55,7 @@ Code 满足 [[下半场-任务与Reward设计]] 的 Reward 三原则：
 
 这是为什么 math/coding 先成为 RL 训练成功的领域。
 
-## Related Pages
+## 相关页面
 
 - [[Agent三阶段演变]] — Code 是第三代 Agent 能 work 的环境
 - [[下半场-任务与Reward设计]] — Code 天然满足 Reward 三原则

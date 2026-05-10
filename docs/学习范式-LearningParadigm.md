@@ -10,7 +10,7 @@ sources: []
 
 > AI "如何学习"的七种主流范式——它们不是互相替代的关系，而是针对不同数据条件和目标的不同路线。
 
-## What It Is
+## 定义
 
 学习范式是对"模型如何从数据中获取能力"的分类。不同范式的核心区别在于：**监督信号从哪来**、**数据如何组织**、**优化目标是什么**。
 
@@ -52,13 +52,13 @@ sources: []
 
 详见 [[LLM训练四阶段总览]]。
 
-## Key Properties
+## 核心特性
 
 - **Self-supervised Learning** 是当前 scale 成功的核心——它让"无标注的互联网文本"变成了可用的训练数据
 - **Reinforcement Learning** 是 alignment 和 reasoning 的关键——但样本效率低，需要精心设计 reward
 - **Online Learning** 和 **Federated Learning** 是边缘/端侧场景的必需——但在大模型时代尚未成为主流训练方式
 
-## Related Pages
+## 相关页面
 
 - [[AI技术体系总览]] — 本页所属的九层框架
 - [[预训练-Pretraining]] — Self-supervised Learning 的 LLM 实践
