@@ -97,11 +97,14 @@ nav:
     - 多模态:
       - 多模态融合-生成理解割裂: 多模态融合-生成理解割裂.md
       - 视觉空间推理: 视觉空间推理-多模态GPT-4时刻.md
-    - 机器人与具身智能:
-      - 具身智能: 具身智能-EmbodiedAI.md
-      - VLA-视觉语言动作模型: VLA-视觉语言动作模型.md
-      - 跨本体: 跨本体-CrossEmbodiment.md
-      - Sim-to-Real: Sim-to-Real.md
+    - 行业应用:
+      - 机器人与具身智能:
+        - 具身智能: 具身智能-EmbodiedAI.md
+        - VLA-视觉语言动作模型: VLA-视觉语言动作模型.md
+        - 跨本体: 跨本体-CrossEmbodiment.md
+        - Sim-to-Real: Sim-to-Real.md
+      - 量化交易:
+        - 量化交易中的AI: 量化交易中的AI.md
     - 前沿议题与展望:
       - NTP的本质缺陷: NTP的本质缺陷.md
       - LongContext与分层记忆: LongContext与分层记忆.md

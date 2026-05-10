@@ -1,16 +1,28 @@
 # Wiki 活动日志
 
+## [2026-05-10] ingest | 量化交易中的 AI
+
+- 新建：量化交易中的AI（行业应用页：学习范式选择、模型架构、训练流水线、与 LLM 的区别）
+- 更新：index.md（新增"行业应用"大类，机器人与具身智能归入其下，新增量化交易子分组）
+- 更新：mkdocs.yml nav 结构同步调整
+- 来源：用户问答 + 用户提供的量化 AI 分析文本
+
+## [2026-05-10] maintenance | 路径迁移
+
+- wiki 源头统一为 `_wiki/docs/`，废弃 vault 级别的 `_wiki-index.md` 和 `_wiki-log.md`
+- llm-wiki skill 路径全部更新指向 `docs/`
+
 ## [2026-05-09] ingest | MoE 混合专家模型
 
 - 新建：MoE-混合专家模型（概念页：稀疏计算、Router、负载均衡、DeepSeek 路线、行业双线并进）
 - 更新：模型架构-ModelArchitecture（MoE 相关段落增加详情链接）
-- 更新：_wiki-index.md（总览与框架小节新增 1 条）
+- 更新：index.md（总览与框架小节新增 1 条）
 - 来源：用户提供的 MoE 问答文本
 
 ## [2026-05-06] ingest | AI技术体系九层框架
 
 - 新建：AI技术体系总览、学习范式-LearningParadigm、模型架构-ModelArchitecture、AI系统形态-SystemArchitecture
-- 更新：_wiki-index.md（总览与框架小节新增 4 条）
+- 更新：index.md（总览与框架小节新增 4 条）
 - 来源：用户提供的"当前 AI 主流技术体系（严格分层版）"文本
 
 ## [2026-05-06] query | 训练阶段 vs 学习范式区分
