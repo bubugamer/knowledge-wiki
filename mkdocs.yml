@@ -69,6 +69,7 @@ nav:
   - 首页: index.md
   - 人工智能 / 大模型:
     - 总览与框架:
+      - 主题概览: AI-总览与框架.md
       - AI技术体系总览: AI技术体系总览.md
       - 学习范式: 学习范式-LearningParadigm.md
       - 模型架构: 模型架构-ModelArchitecture.md
@@ -78,16 +79,19 @@ nav:
       - OpenAI五级智能分类: OpenAI五级智能分类.md
       - Agent三阶段演变: Agent三阶段演变.md
     - 训练阶段:
+      - 主题概览: AI-训练阶段.md
       - 预训练: 预训练-Pretraining.md
       - SFT-有监督微调: SFT-有监督微调.md
       - Alignment-对齐: Alignment-对齐.md
       - 推理训练-CoT: 推理训练-CoT.md
     - 方法与对比:
+      - 主题概览: AI-方法与对比.md
       - RLHF vs DPO: RLHF-vs-DPO.md
       - PEFT-LoRA: PEFT-LoRA.md
       - 下半场-任务与Reward设计: 下半场-任务与Reward设计.md
       - 表征学习: 表征学习-RepresentationLearning.md
     - 应用架构:
+      - 主题概览: AI-应用架构.md
       - RAG-检索增强生成: RAG-检索增强生成.md
       - 向量数据库: 向量数据库-VectorDatabase.md
       - 微调 vs RAG 决策: 微调vs RAG-决策.md
@@ -95,9 +99,11 @@ nav:
       - Code-AI的Affordance: Code-AI的Affordance.md
       - JEPA-联合嵌入预测架构: JEPA-联合嵌入预测架构.md
     - 多模态:
+      - 主题概览: AI-多模态.md
       - 多模态融合-生成理解割裂: 多模态融合-生成理解割裂.md
       - 视觉空间推理: 视觉空间推理-多模态GPT-4时刻.md
     - 行业应用:
+      - 主题概览: AI-行业应用.md
       - 机器人与具身智能:
         - 具身智能: 具身智能-EmbodiedAI.md
         - VLA-视觉语言动作模型: VLA-视觉语言动作模型.md
@@ -105,16 +111,27 @@ nav:
         - Sim-to-Real: Sim-to-Real.md
       - 量化交易:
         - 量化交易中的AI: 量化交易中的AI.md
-    - 前沿议题与展望:
+    - 前沿议题:
+      - 主题概览: AI-前沿议题.md
       - NTP的本质缺陷: NTP的本质缺陷.md
       - LongContext与分层记忆: LongContext与分层记忆.md
       - 自主学习与在线学习: 自主学习与在线学习.md
       - 世界模型: 世界模型-WorldModel.md
-    - 参考:
+    - 术语与参考:
+      - 主题概览: AI-术语与参考.md
       - LLM术语速查: LLM术语速查.md
       - Bitter Lesson: Bitter-Lesson.md
       - Moravec悖论: Moravec悖论.md
+  - 联络中心 / CCaaS:
+    - 平台与架构:
+      - 主题概览: CCaaS-平台与架构.md
+      - Genesys Cloud Architect: Genesys-Cloud-Architect.md
+      - GCA Flow Types: GCA-Flow-Types.md
+      - GCA Actions: GCA-Actions.md
+      - GCA Variables: GCA-Variables.md
+      - GCA vs Dify Workflow: GCA-vs-Dify-Workflow.md
   - AI 产品与公司:
+    - 主题概览: AI产品与公司.md
     - Dify-开源LLM应用平台: Dify-开源LLM应用平台.md
     - LangGenius-Dify母公司: LangGenius-Dify母公司.md
     - 张路宇-Dify创始人: 张路宇-Dify创始人.md
