@@ -50,7 +50,7 @@ Action 是流程的最小执行单元，不同 Flow 类型可用的 Action 集�
 
 ## 变量体系
 
-详见 **[GCA 变量体系详解](GCA-Variables.md)**。
+详见 **[GCA 变量与表达式体系](GCA-Variables.md)**。
 
 简表：
 
@@ -83,13 +83,20 @@ Action 是流程的最小执行单元，不同 Flow 类型可用的 Action 集�
 | 并发 | 每通电话/每个交互独立执行一个 Flow 实例，天然隔离 |
 | 可观测性 | Flow 执行日志、Debug 模式（逐步执行、变量查看） |
 | 执行时长上限 | Call Flow 短时运行；Email Flow 可达 8+ 小时；Workitem Flow 可能持续数天 |
+| Action 执行上限 | 10,000 次/实例，Error Handler 额外 1,000 次，超出后 Silent Disconnect |
+
+深入运行时行为（事件处理、错误恢复、超时、重试、可观测性、底层架构）详见 **[GCA 运行时执行架构](GCA-Runtime-Execution.md)**。
 
 <!-- status: 草稿 — 组件分类基于公开文档和使用经验，部分细节待核验 -->
 
 ## Related Pages
 
-- [[GCA-Actions]] — 组件（Action）分类详解：用户交互、数据操作、路由转接、逻辑分支、表达式系统
-- [[GCA-Variables]] — 变量体系详解：分类、作用域、数据类型、系统变量
+- [[GCA-Actions]] — 组件（Action）分类详解：用户交互、数据操作、路由转接、逻辑分支
+- [[GCA-Variables]] — 变量与表达式体系：分类、作用域、数据类型、系统变量、内置函数、运算符
 - [[GCA-Flow-Types]] — Flow 类型详解：能力矩阵、协作模式、设计哲学
+- [[GCA-Resources-Permissions]] — 资源类型与权限管理：Division 分区、RBAC、资源限额
+- [[GCA-Routing-Admin]] — 路由配置与 ACD 策略：号码映射、日程、Bullseye、Predictive Routing
+- [[GCA-Runtime-Execution]] — 运行时执行架构：事件处理、错误恢复、超时、重试、可观测性、底层架构
+- [[GCA-Glossary]] — 术语表：核心概念快速解释与跳转索引
 - [[GCA-vs-Dify-Workflow]] — 与 Dify Workflow 的结构性对比
 - [[CCaaS-平台与架构]] — 所属主题页

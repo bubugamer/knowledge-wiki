@@ -1,7 +1,7 @@
 ---
-title: Genesys Cloud Architect — 变量体系
+title: Genesys Cloud Architect — 变量与表达式体系
 created: 2026-05-12
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 status: 草稿
 tags: [联络中心, CCaaS, 流程编排, IVR, Genesys]
 sources:
@@ -9,7 +9,7 @@ sources:
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
 ---
 
-> Architect 的变量体系定义了流程数据的作用域、类型、生命周期和跨流程传递方式。理解变量体系是正确使用 Data Action、Transfer、Bot 等组件的前提。
+> Architect 的变量与表达式体系定义了流程数据的作用域、类型、生命周期、跨流程传递方式，以及操作这些数据的函数和运算符。
 
 ## 变量分类与作用域
 
@@ -236,6 +236,42 @@ Participant Data 不属于任何 Flow 的局部变量，而是附着在 Conversa
 - 语音 IVR：未指定变量时默认存入 `Task.Input`；DTMF 结果为字符串
 - Bot Flow：槽位结果类型取决于 Slot Type 定义（可为 String / Integer / Date / Boolean 等）
 - 无输入 → Menu.LastCollectionNoInput = True；无效输入 → Menu.LastCollectionNoMatch = True
+
+---
+
+## 表达式系统
+
+表达式是操作变量的核心工具，用于 Decision / Switch / Update Data / 任何需要动态值的地方。
+
+### 内置函数
+
+| 类别 | 函数 | 说明 |
+|------|------|------|
+| **类型转换** | ToString, ToInt, ToDecimal, ToBoolean, ToDateTime, ToDate, ToTime, ToDuration, ToPhoneNumber | 基础类型互转；无 ToUser / ToQueue 等网络类型转换 |
+| **对象构造** | MakeEmailAddress, MakePhoneNumber, MakeDuration, MakeDateTime, MakeList | 创建复合类型实例 |
+| **网络查找** | FindUserById, FindQueueById, FindSkill, FindGroup, FindGroupById, FindWrapUpCode | 按 GUID 或名称获取网络类型对象；未找到返回 NOT_SET |
+| **集合操作** | Count, IsEmpty, GetAt, Find, FindFirst, AddItem, AddItemAt, RemoveItem, RemoveItemAt, RemoveDups, ReplaceItem, ReplaceItemAt | 有序列表的增删改查 |
+| **字符串** | Append, Contains, Length, Substring, Left, Right, Upper, Lower, Trim, Replace | Append 可安全拼接 NOT_SET 值（跳过而非报错） |
+| **日期时间** | GetCurrentDateTimeUtc, AddDays, AddHours, AddMinutes, AddSeconds, AddDuration, GetDayOfWeek, Year, Month, Day, Hour, Minute, Second | 日期运算与部分提取 |
+| **JSON** | JsonParse, ToJson, ToJsonCollection | JSON 字符串 ↔ 对象互转 |
+| **判断** | IsSet, IsNotSetOrEmpty, AreEqual, Not | 空值检查与相等比较 |
+| **音频** | ToAudioBoolean, ToAudioPrompt, ToAudioBlank, ToCommunication, ToCommunicationTTS | 语音渠道专用，将值转为可播放的音频/通信对象 |
+
+### 运算符（按优先级从高到低）
+
+| 类别 | 运算符 | 示例 |
+|------|--------|------|
+| 访问 | `.`（属性）`[]`（集合索引） | `Flow.MyCurrency.Amount`、`Flow.List[0]` |
+| 一元 | `-`（取反）`!`（逻辑非）`~`（位非） | `!IsNotSetOrEmpty(Call.Ani)` |
+| 幂 | `^` | `2 ^ Flow.Power` |
+| 算术 | `*` `/` `%` | `(Flow.WaitMs / 1000) % 60` |
+| 加减 | `+` `-` | `Flow.AverageHandleTime + 5` |
+| 比较 | `<` `<=` `>` `>=` | `Call.AbandonRate <= 0.05` |
+| 等于 | `==` `!=` | `Flow.MemberTier == "Gold"` |
+| 位运算 | `&` `\|` | `Flow.Flags & 4 == 4`（极少用，能用 Boolean 就别用位运算） |
+| 逻辑 | `and` `or` | `IsSet(Flow.Email) and Flow.Email != ""` |
+
+> **易混淆**：逻辑 `and` / `or` 对 Boolean 短路求值；位运算 `&` / `|` 对 Integer 按位操作。两者完全不同，混用是常见错误。
 
 ---
 

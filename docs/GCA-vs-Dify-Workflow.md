@@ -40,17 +40,6 @@ GCA 的核心组件与 Dify 节点的功能对应关系：
 | Call Common Module | 调用可复用子流程 | Sub-workflow |
 | Disconnect | 挂断/结束 | End |
 
-### 交互与 AI
-
-| GCA 组件 | 功能 | Dify 对应节点 |
-|----------|------|-------------|
-| Collect Input (DTMF) | 按键采集 | Human Input（类比） |
-| ASR / NLU | 语音识别 + 意图理解 | LLM（类比：自然语言理解） |
-| Bot Conversation | 调用 Bot 引擎 | LLM |
-| Call Dialogflow / Lex Bot | 调用第三方 AI | Tool / HTTP Request |
-| Play Audio / TTS | 语音播放 | —（无语音渠道） |
-| Transfer to ACD | 转人工座席 | —（无座席概念） |
-
 ### GCA 有但 Dify 无的能力
 
 - 通信路由（Transfer to ACD / Number / Voicemail）

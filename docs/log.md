@@ -1,5 +1,36 @@
 # Wiki 活动日志
 
+## [2026-05-14] ingest | GCA Glossary 术语表页
+
+- 新建：GCA-Glossary（按 9 个功能域分组的术语表：平台与产品、Flow、Action、变量与数据、路由与 ACD、资源与权限、运行时与可观测性、AI/NLU、通用缩写，每个术语含解释和详情页跳转链接）
+- 更新：Genesys-Cloud-Architect Related Pages（新增术语表链接）
+- 更新：CCaaS-平台与架构（新增 GCA Glossary 条目）
+- 更新：mkdocs.yml nav（新增 GCA Glossary）
+- 来源：从现有 7 个 GCA wiki 页面中提取约 180 个术语候选，筛选为 ~80 个核心术语
+
+## [2026-05-14] ingest | GCA Runtime Execution 运行时执行架构页
+
+- 新建：GCA-Runtime-Execution（事件处理机制、错误处理与恢复、超时机制、执行模型与限制、重试模式、可观测性与调试、底层运行时架构）
+- 更新：Genesys-Cloud-Architect（执行引擎章节新增 Action 上限行、运行时页面链接）
+- 更新：CCaaS-平台与架构（新增 GCA Runtime Execution 条目）
+- 更新：mkdocs.yml nav（新增 GCA Runtime Execution）
+- 来源：Genesys Cloud 官方文档 + Developer Center + 架构白皮书 + 社区论坛 + Web 深度调研
+
+## [2026-05-13] ingest | GCA Resources-Permissions & Routing-Admin 页
+
+- 新建：GCA-Resources-Permissions（资源类型详解、Division 分区机制、RBAC 权限模型、资源限额、治理建议）
+- 新建：GCA-Routing-Admin（Call/Message/Email Routing、Schedule/Emergency、Direct Routing、ACD 策略 5 种、Predictive Routing、2025-2026 新特性）
+- 更新：CCaaS-平台与架构（新增两个页面条目）
+- 更新：Genesys-Cloud-Architect Related Pages（新增两个链接）
+- 更新：mkdocs.yml nav（新增两个页面）
+- 来源：gca调研/genesys_architect_resources.md + gca Routing.md + Web 调研（Genesys Cloud Resource Center 2025-08 ~ 2026-03）
+
+## [2026-05-13] maintenance | Actions 页拆分：表达式系统→Variables，管理配置移除
+
+- 更新：GCA-Actions（移除"表达式系统"和"管理配置"两个非 Action 章节）
+- 更新：GCA-Variables → 改名"变量与表达式体系"，合入内置函数表、运算符表
+- 更新：Genesys-Cloud-Architect、CCaaS-平台与架构（同步页面描述）
+
 ## [2026-05-12] ingest | GCA Variables 变量体系页
 
 - 新建：GCA-Variables（变量分类与作用域、数据类型体系、系统预置变量、变量配置选项、关键 Action 中的变量行为、设计限制）

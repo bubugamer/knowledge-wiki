@@ -129,6 +129,10 @@ nav:
       - GCA Flow Types: GCA-Flow-Types.md
       - GCA Actions: GCA-Actions.md
       - GCA Variables: GCA-Variables.md
+      - GCA Resources & Permissions: GCA-Resources-Permissions.md
+      - GCA Routing Admin: GCA-Routing-Admin.md
+      - GCA Glossary: GCA-Glossary.md
+      - GCA Runtime Execution: GCA-Runtime-Execution.md
       - GCA vs Dify Workflow: GCA-vs-Dify-Workflow.md
   - AI 产品与公司:
     - 主题概览: AI产品与公司.md

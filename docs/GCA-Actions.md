@@ -153,56 +153,6 @@ Bot Flow 的对话 AI 配置组件，非运行时 Action，而是设计时配置
 | **End Task** | 以命名输出路径结束当前 Task（仅 Email/Message Flow） |
 | **Call Common Module** | 调用跨 Flow 的可复用子流程；动作集为所有兼容类型的交集；**不可嵌套**；被引用时锁定版本快照 |
 
----
-
-## 表达式系统
-
-### 内置函数（49 个）
-
-| 类别 | 函数 |
-|------|------|
-| **类型转换** | ToString, ToInt, ToDecimal, ToBoolean, ToDateTime, ToDate, ToTime, ToDuration, ToPhoneNumber |
-| **对象构造** | MakeEmailAddress, MakePhoneNumber, MakeDuration, MakeDateTime, MakeList |
-| **查找** | FindUserById, FindQueueById, FindSkill, FindGroup, FindWrapUpCode |
-| **集合操作** | Count, IsEmpty, GetAt, Find, FindFirst, AddItem, RemoveItem, RemoveDups, ReplaceItem |
-| **字符串** | Append, Contains, Length, Substring, Left, Right, Upper, Lower |
-| **日期时间** | GetCurrentDateTimeUtc, AddDays, Year, Month, Day, Hour, Minute, Second |
-| **JSON** | JsonParse, ToJson, ToJsonCollection |
-| **判断** | IsSet, IsNotSetOrEmpty, AreEqual, Not |
-| **音频** | ToAudioBoolean, ToAudioPrompt, ToAudioBlank, ToCommunication, ToCommunicationTTS |
-
-### 运算符
-
-| 类别 | 运算符 |
-|------|--------|
-| 算术 | `+` `-` `*` `/` `%` `^` |
-| 比较 | `<` `<=` `>` `>=` `==` `!=` |
-| 逻辑 | `and` `or` `!` |
-| 位运算 | `&` `\|` `~` |
-| 访问 | `.`（属性）`[]`（集合索引） |
-
-### 表达式系统限制
-
-- **无** ToUser / ToQueue / ToSkill 函数——网络类型对象只能通过 Find Action 或 FindById 函数获取
-- **无** 字符串 Split 函数
-- **无** 高级数学函数（sin/cos 等）
-- 集合最大 2000 项
-
----
-
-## 管理配置（非 Action，但影响 Flow 行为）
-
-| 配置项 | 说明 |
-|--------|------|
-| **Schedules / Schedule Groups** | 定义营业时间、假日；Groups 组合多个日程 |
-| **Call Routing** | 将 DID/电话号码映射到 Inbound Call Flow + 日程 + 紧急覆盖 |
-| **Message Routing** | 将消息地址（WhatsApp/SMS 等）映射到 Inbound Message Flow |
-| **Direct Routing** | 绕过队列直接路由到指定坐席；需单独启用 |
-| **Emergencies** | 紧急组开关，激活时覆盖正常路由 |
-| **Data Tables** | 键值查找存储；最大 50K 行 × 100 列；~20ms 查询；配置数据用途 |
-| **Flow Outcomes & Milestones** | 自助服务分析指标；接入 Performance Dashboard |
-| **Work Automation** | 后台任务路由（工单）；需附加许可证 |
-
 <!-- status: 草稿 — 内容基于 Genesys Cloud 官方文档和内部调研文档，部分细节待核验 -->
 
 ## Related Pages
