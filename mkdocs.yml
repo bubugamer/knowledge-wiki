@@ -125,15 +125,16 @@ nav:
   - 联络中心 / CCaaS:
     - 平台与架构:
       - 主题概览: CCaaS-平台与架构.md
-      - Genesys Cloud Architect: Genesys-Cloud-Architect.md
-      - GCA Flow Types: GCA-Flow-Types.md
-      - GCA Actions: GCA-Actions.md
-      - GCA Variables: GCA-Variables.md
-      - GCA Resources & Permissions: GCA-Resources-Permissions.md
-      - GCA Routing Admin: GCA-Routing-Admin.md
-      - GCA Glossary: GCA-Glossary.md
-      - GCA Runtime Execution: GCA-Runtime-Execution.md
-      - GCA vs Dify Workflow: GCA-vs-Dify-Workflow.md
+      - Genesys Cloud Architect:
+        - 总览: Genesys-Cloud-Architect.md
+        - Flow Types: GCA-Flow-Types.md
+        - Actions: GCA-Actions.md
+        - Variables: GCA-Variables.md
+        - Resources & Permissions: GCA-Resources-Permissions.md
+        - Routing Admin: GCA-Routing-Admin.md
+        - Runtime Execution: GCA-Runtime-Execution.md
+        - Glossary: GCA-Glossary.md
+        - GCA vs Dify Workflow: GCA-vs-Dify-Workflow.md
   - AI 产品与公司:
     - 主题概览: AI产品与公司.md
     - Dify-开源LLM应用平台: Dify-开源LLM应用平台.md

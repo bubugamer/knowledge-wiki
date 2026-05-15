@@ -2,8 +2,7 @@
 title: 视觉空间 CoT 与多模态 GPT-4 时刻
 created: 2026-04-14
 last_updated: 2026-04-15
-status: 预测
-confidence: 预测
+status: 草稿
 tags: [LLM, 多模态, 视觉, CoT, 预测]
 sources:
   - 02-Areas/LLM/102. 和张祥雨聊，多模态研究的挣扎史和未来两年的2个"GPT-4时刻".md

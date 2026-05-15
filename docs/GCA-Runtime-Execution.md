@@ -1,7 +1,7 @@
 ---
 title: Genesys Cloud Architect — 运行时执行架构
 created: 2026-05-14
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 status: 草稿
 tags: [联络中心, CCaaS, 流程编排, IVR, Genesys, 运行时]
 sources:
@@ -11,26 +11,32 @@ sources:
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
 ---
 
-> 本文聚焦 Architect Flow 发布后在生产环境中的运行时行为：事件处理、错误恢复、超时机制、执行限制、重试模式、可观测性，以及底层平台架构。
+> 本文聚焦 Architect Flow 发布后在生产环境中的运行时行为：异常处理、执行限制、重试模式、可观测性，以及底层平台架构。
 
-## 1. 事件处理机制 (Event Handling)
+## 1. 异常处理体系 (Exception Handling)
 
-### 事件类型
+Architect 的正常流程靠 Action 顺序执行和分支逻辑（Decision / Switch / Loop）推进——客户按键、Intent 匹配成功、Data Action 返回 Success 等"正常的事"直接走 Action 的输出分支往下走，不涉及事件系统。**事件系统专用于异常和边界场景**，即"正常路径走不下去了"时的兜底机制（**确认来源：官方文档**——原文："Event handling determines how Architect behaves when an error occurs"；正常流程为顺序执行属**推断**，基于官方文档结构和事件定义反推）。
+
+下面从三个切面展开：**触发什么事件** → **怎么走异常路径** → **什么条件判定为异常**。
+
+### 1.1 事件类型与处理层级
+
+#### 事件类型
 
 Architect 在运行时可响应以下事件类型（**确认来源：官方文档**）：
 
-| 事件                            | 触发条件                      | 可用 Flow 类型                          |
-| ----------------------------- | ------------------------- | ----------------------------------- |
-| **Error Event**               | 未捕获的运行时错误、超出 Action 上限    | 所有类型                                |
-| **Disconnect Event**          | 客户/系统侧断开连接                | Call Flow、In-Queue Call、Secure Call |
-| **Recognition Failure Event** | Bot 无法识别客户回复（NLU 置信度不足）   | Bot Flow、Digital Bot Flow           |
-| **Agent Escalation Event**    | 系统检测到客户希望转人工（无需显式 Intent） | Bot Flow、Digital Bot Flow           |
-| **No Input Timeout**          | 采集节点等待超时，客户未输入            | Call Flow、Bot Flow                  |
-| **No Match**                  | DTMF/语音输入不匹配任何选项          | Call Flow（Menu 节点）                  |
+| 事件 | 触发条件 | 可用 Flow 类型 |
+|------|---------|---------------|
+| **Error Event** | 未捕获的运行时错误、超出 Action 上限 | 所有类型 |
+| **Disconnect Event** | 客户/系统侧断开连接 | Call Flow、In-Queue Call、Secure Call |
+| **Recognition Failure Event** | Bot 无法识别客户回复（NLU 置信度不足） | Bot Flow、Digital Bot Flow |
+| **Agent Escalation Event** | 系统检测到客户希望转人工（无需显式 Intent） | Bot Flow、Digital Bot Flow |
+| **No Input Timeout** | 采集节点等待超时，客户未输入 | Call Flow、Bot Flow |
+| **No Match** | DTMF/语音输入不匹配任何选项 | Call Flow（Menu 节点） |
 
-**不支持自定义事件**——事件类型由平台预定义，流程作者只能配置各事件的处理方式（Handling），不能创建新的事件类型。
+**不支持自定义事件**——事件类型由平台预定义，流程作者只能配置各事件的处理方式（Handling），不能创建新的事件类型。正常业务分支用 Decision/Switch 即可实现，不需要事件机制。
 
-### 事件处理层级
+#### 处理层级
 
 事件处理遵循二级层级（**确认来源：官方文档**）：
 
@@ -43,15 +49,15 @@ Architect 在运行时可响应以下事件类型（**确认来源：官方文�
 - **Jump to Menu**（跳转菜单，启动额外 1,000 Action 配额）
 - **Jump to Reusable Task**（跳转可复用任务，同样启动额外配额）
 
-### 跨 Flow 类型差异
+#### 跨 Flow 类型差异
 
 - **Bot Flow / Digital Bot Flow**：额外拥有 Recognition Failure Event 和 Agent Escalation Event，这两个事件在 Call Flow 中不存在。
 - **Workflow（后台）**：无 Disconnect Event（无实时交互连接），仅有 Error Event。
 - **Secure Call Flow**：转接相关的 Failure 路径被平台强制覆盖——转接失败时直接 Disconnect，忽略开发者定义的失败分支。
 
-## 2. 错误处理与恢复 (Error Handling & Recovery)
+### 1.2 Failure 分支与错误恢复
 
-### Failure Output 分支
+#### Failure Output 分支
 
 许多 Action 提供 Success / Failure / Timeout 三条输出分支（**确认来源：官方文档**）：
 
@@ -60,31 +66,31 @@ Architect 在运行时可响应以下事件类型（**确认来源：官方文�
 - **Find 类 Action**（Find Queue / User 等）：有 Not Found 分支。
 - **简单逻辑 Action**（Decision、Update Data 等）：通常无独立的 Failure 分支。
 
-### 错误信息获取
+#### 错误信息获取
 
 Failure 分支上可用的错误信息有限。Data Action 的 Failure 路径不会自动暴露 HTTP 状态码或详细错误消息到 Flow 变量中（**确认来源：社区论坛反馈**）。开发者通常需要通过 Participant Data 手动记录故障路径信息来辅助排查。系统层面可在交互记录的 Disconnect Type 和 Error Code 字段查看错误码（如 `error.ininedgecontrol.connection.noAvailableLines`）。
 
-### 未处理错误的行为
+#### 未处理错误的行为
 
 当发生未被 Failure 分支捕获的错误时，Flow 进入 Flow 级 Error Event Handler。如果 Error Event Handler 也未配置或自身失败，默认行为是 **Disconnect**（挂断通话）。
 
-### Secure Flow 特殊行为
+#### Secure Flow 特殊行为
 
 **确认来源：官方文档**——在 Secure Call Flow 中，所有 Transfer Action（Transfer to ACD / User / Number / Group / Flow / Voicemail）的自定义 Failure 路径被平台覆盖，失败时直接断开。原因：Secure Flow 中使用 Blind Transfer 而非 Consultation Transfer，以避免 VXML 安全问题。
 
-## 3. 超时机制 (Timeout Mechanisms)
+### 1.3 超时机制
 
-| 超时场景                    | 默认值         | 可配置                                  | 说明                                                   |
-| ----------------------- | ----------- | ------------------------------------ | ---------------------------------------------------- |
-| **No Input Timeout**    | 因 Flow 类型而异 | 是，每个采集节点独立设置                         | 等待客户输入的超时时间                                          |
-| **No Match 最大重试**       | 通常 3 次      | 是                                    | 达到上限后进入 Error Event Handling                         |
-| **Data Action Timeout** | 60 秒        | 通过 Timeout 分支处理（**推断：超时值本身是否可改待确认**） | 走 Timeout 输出分支                                       |
-| **Flow 级执行时长**          | 无统一硬限制      | N/A                                  | Call Flow 短时运行；Email Flow 可达 8h+；Workitem Flow 可持续数天 |
-| **Action 上限**           | 10,000 次    | 不可调                                  | 超出后进入 Error Event Handler                            |
+| 超时场景 | 默认值 | 可配置 | 说明 |
+|---------|--------|--------|------|
+| **No Input Timeout** | 因 Flow 类型而异 | 是，每个采集节点独立设置 | 等待客户输入的超时时间 |
+| **No Match 最大重试** | 通常 3 次 | 是 | 达到上限后进入 Error Event Handling |
+| **Data Action Timeout** | 60 秒 | 通过 Timeout 分支处理（**推断：超时值本身是否可改待确认**） | 走 Timeout 输出分支 |
+| **Flow 级执行时长** | 无统一硬限制 | N/A | Call Flow 短时运行；Email Flow 可达 8h+；Workitem Flow 可持续数天 |
+| **Action 上限** | 10,000 次 | 不可调 | 超出后进入 Error Event Handler |
 
 Bot Flow 的 No Input Timeout 支持通过 Archy CLI 工具配置（Digital Bot Flow 同样支持）。
 
-## 4. 执行模型 (Execution Model)
+## 2. 执行模型 (Execution Model)
 
 ### 实例隔离
 
@@ -113,7 +119,7 @@ Bot Flow 的 No Input Timeout 支持通过 Archy CLI 工具配置（Digital Bot 
 - Data Action 执行速率上限：**2,500 次/分钟**（Org 级）。
 - 如果 Data Action 调用 Genesys Cloud 自身 API，额外受 OAuth2 Token 的 **300 次请求** 限制。
 
-## 5. 重试模式 (Retry Patterns)
+## 3. 重试模式 (Retry Patterns)
 
 ### Data Action 重试
 
@@ -134,7 +140,7 @@ Bot Flow 在低置信度时自动重新提示（re-prompt），达到 Max Retry 
 
 Transfer Action 的 Failure 分支可以跳回重试逻辑（仅限非 Secure Flow）。Secure Flow 中转接失败直接断开，无法重试。
 
-## 6. 可观测性与调试 (Observability & Debugging)
+## 4. 可观测性与调试 (Observability & Debugging)
 
 ### Debug 模式
 
@@ -172,7 +178,7 @@ Transfer Action 的 Failure 分支可以跳回重试逻辑（仅限非 Secure Fl
 
 无内置的 Flow 错误告警机制。可通过 Event Bridge 集成（如 AWS EventBridge）将 Flow Instance Execution Error Event 推送到外部监控系统（**确认来源：开发者事件目录**）。
 
-## 7. 底层运行时架构 (Runtime Architecture)
+## 5. 底层运行时架构 (Runtime Architecture)
 
 ### 平台架构
 
