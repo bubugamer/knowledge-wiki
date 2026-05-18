@@ -7,6 +7,7 @@ confidence: 专家观点
 tags: [Agent, Coding, 环境, Affordance, 概念]
 sources:
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > **Affordance**（可供性）= 环境提供给智能体的行动可能性（心理学 / HCI 概念）。姚顺雨把它借到 AI 领域——**code 是 AI 最重要的 affordance**，因为它是世界上唯一一种"为机器而非为人设计的接口"。

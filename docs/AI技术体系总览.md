@@ -6,6 +6,7 @@ status: 草稿
 confidence: 共识
 tags: [AI, 总览, 技术体系]
 sources: []
+visibility: public
 ---
 
 > 当前 AI 主流技术的九层分层框架——从学习范式到系统工程，再到行业趋势，提供一张完整的技术地图。

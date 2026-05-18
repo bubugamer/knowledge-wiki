@@ -7,6 +7,7 @@ tags: [联络中心, CCaaS, 流程编排, IVR, Genesys]
 sources:
   - Genesys Cloud 官方文档
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
+visibility: public
 ---
 
 > Architect 的组件（Action）是流程的最小执行单元。不同 Flow 类型可用的 Action 集合不同，由渠道特性和安全策略决定。

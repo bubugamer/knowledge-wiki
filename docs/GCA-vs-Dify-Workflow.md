@@ -7,6 +7,7 @@ tags: [联络中心, CCaaS, AI平台, 流程编排, 对比]
 sources:
   - Genesys Cloud 官方文档
   - Dify 官方文档 / GitHub
+visibility: public
 ---
 
 > 两个可视化流程编排平台的结构性对比：一个面向联络中心，一个面向 AI 应用开发。

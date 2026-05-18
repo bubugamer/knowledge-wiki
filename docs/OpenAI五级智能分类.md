@@ -8,6 +8,7 @@ tags: [LLM, AGI, Agent, OpenAI, 路线图]
 sources:
   - 02-Areas/LLM/102. 和张祥雨聊，多模态研究的挣扎史和未来两年的2个"GPT-4时刻".md
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > OpenAI 官方提出的 AGI 路线图，从 Chatbot 到 Organization 五级。读访谈常会遇到"L2/L3 Agent"这类说法，本页给出每级的最小定义与读图要点。

@@ -6,6 +6,7 @@ status: 草稿
 confidence: 共识
 tags: [AI, 系统架构, Agent, RAG]
 sources: []
+visibility: public
 ---
 
 > AI 系统"如何组织"——从简单 Chatbot 到 AI Operating System 的七种系统形态，复杂度和自主性递增。

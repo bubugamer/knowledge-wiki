@@ -1,5 +1,6 @@
 ---
 title: Knowledge Wiki
+visibility: public
 ---
 
 # Knowledge Wiki

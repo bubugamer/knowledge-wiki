@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [机器人, 仿真, 数据, Sim2Real, Diffusion]
 sources:
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > Sim-to-Real = 在物理仿真器里训练策略，然后部署到真实机器人。**解决了过去十年机器人"腿部运动"（locomotion）的所有事**（Atlas 跑跳、四足机器人走路）——但对"操纵"（manipulation）至今没完全搞定。

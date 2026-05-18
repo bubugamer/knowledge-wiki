@@ -6,11 +6,12 @@ status: 草稿
 tags: [联络中心, CCaaS, 流程编排, IVR]
 sources:
   - Genesys Cloud 官方文档
+visibility: public
 ---
 
 > Genesys Cloud Architect 是 Genesys Cloud CX 平台的可视化流程编排工具，用于设计 IVR、语音机器人、数字渠道交互和工作流。
 
-## What It Is
+## 介绍
 
 Architect 是 Genesys Cloud 的拖拽式流程设计器（Flow Designer），覆盖从来电接入到座席分配的全链路交互逻辑。管理员和流程开发者通过可视化画布编排业务流程，无需编写代码即可实现复杂的自助服务和路由策略。
 

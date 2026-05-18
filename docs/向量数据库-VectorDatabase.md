@@ -6,6 +6,7 @@ status: 草稿
 tags: [向量检索, RAG, 数据库, Embedding, 基础设施]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > 向量数据库是专门为高维向量的存储、索引和近似最近邻（ANN）检索而设计的数据库，是 RAG 流水线中"向量化与索引"和"检索"两步的基础设施。

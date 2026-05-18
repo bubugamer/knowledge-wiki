@@ -7,6 +7,7 @@ tags: [联络中心, CCaaS, 流程编排, IVR, Genesys]
 sources:
   - Genesys Cloud 官方文档
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
+visibility: public
 ---
 
 > Architect 的变量与表达式体系定义了流程数据的作用域、类型、生命周期、跨流程传递方式，以及操作这些数据的函数和运算符。

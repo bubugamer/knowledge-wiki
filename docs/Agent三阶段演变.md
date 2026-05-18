@@ -7,6 +7,7 @@ confidence: 共识
 tags: [Agent, RL, 符号主义, 历史, 概念]
 sources:
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > "Agent" 不是新词——从图灵开始就是 AI 的目标。读文献时看到 Agent，要分清楚指哪一代。本页给出三代的最小定义与区分点。

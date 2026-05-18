@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [机器人, 具身智能, VLA, 基座模型, Gemini Robotics]
 sources:
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > VLA = Vision-Language-Action Model。输入视觉和语言，输出机器人动作（低阶 joint/关节控制 或高阶 action token）。是当前"机器人基座模型"的主流架构范式——**本质是 VLM 的 action 版微调**。

@@ -8,6 +8,7 @@ sources:
   - Genesys Cloud 官方文档
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
   - Genesys Cloud Resource Center (2026-02/03 Release Notes)
+visibility: public
 ---
 
 > Architect 的资源对象通过 Division（分区）实现访问隔离，通过 RBAC（基于角色的权限）实现操作粒度控制。理解资源—分区—权限的关系是平台治理的基础。

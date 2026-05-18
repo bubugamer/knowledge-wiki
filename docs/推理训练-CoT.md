@@ -8,6 +8,7 @@ tags: [LLM, 推理, CoT, Meta-CoT, O系列]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
   - 02-Areas/LLM/102. 和张祥雨聊，多模态研究的挣扎史和未来两年的2个"GPT-4时刻".md
+visibility: public
 ---
 
 > 推理训练 = 通过显式的中间思考步骤降低回答方差。本页收录：**CoT**、**Meta-CoT**、**Outcome vs Process Supervision**、**动作空间压缩**、**Pattern is all you need**。

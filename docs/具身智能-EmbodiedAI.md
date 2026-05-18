@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [机器人, 具身智能, AGI, 总览]
 sources:
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > 具身智能 = 把 AI 放进一个能感知、行动、和物理世界交互的身体里。它不是 "LLM + 机器人" 的简单合成，而是对"智能是否必须具身"这个 AGI 元问题的一条答案。本页是机器人/具身子域的入口。

@@ -8,6 +8,7 @@ sources:
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研-整合版.md
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研1.md
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研2.md
+visibility: public
 ---
 
 > Dify 是一个开源全栈 LLM 应用开发平台，把可视化 Workflow、RAG、Agent、Plugin、MCP、LLMOps 打包成统一体验，目标是让团队从原型到生产部署一站完成。

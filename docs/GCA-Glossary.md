@@ -7,6 +7,7 @@ tags: [联络中心, CCaaS, 流程编排, IVR, Genesys, 术语]
 sources:
   - Genesys Cloud 官方文档 (help.mypurecloud.com)
   - Genesys Cloud Developer Center (developer.genesys.cloud)
+visibility: public
 ---
 
 > GCA 相关核心术语的快速解释与跳转索引，按功能域分组。

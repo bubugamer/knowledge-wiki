@@ -8,6 +8,7 @@ tags: [AI, 机器人, 认知, Moravec, 具身智能]
 sources:
   - 02-Areas/LLM/133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42.md
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > Hans Moravec 1980 年代提出：**人类觉得难的（下棋、证明定理），机器做得好；人类觉得简单的（抓杯子、识别物体、走路），机器做不了**。在 LLM 时代这个悖论反而更显性——越是"听起来炫技"的任务 AI 越先做到，越是"人人都会"的能力 AI 越差。

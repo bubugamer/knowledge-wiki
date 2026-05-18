@@ -9,6 +9,7 @@ sources:
   - Genesys Cloud Developer Center (developer.genesys.cloud)
   - Genesys Cloud 架构白皮书 (genesys.com/capabilities/cloud-architecture)
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
+visibility: public
 ---
 
 > 本文聚焦 Architect Flow 发布后在生产环境中的运行时行为：异常处理、执行限制、重试模式、可观测性，以及底层平台架构。

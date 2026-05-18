@@ -6,6 +6,7 @@ status: 草稿
 confidence: 共识
 tags: [AI, 模型架构, 神经网络]
 sources: []
+visibility: public
 ---
 
 > 神经网络"长什么样"——当前主流的 11 种模型架构，从经典 MLP 到前沿 SSM 和 MoE。

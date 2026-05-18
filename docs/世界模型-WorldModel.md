@@ -8,6 +8,7 @@ tags: [LLM, 世界模型, 强化学习, 多模态, 机器人]
 sources:
   - 02-Areas/LLM/133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42.md
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > 世界模型 = 一个能根据当前状态 + 施加的动作，预测下一个状态的函数。它不是某种具体技术，而是一个"目的"——让智能体在动作之前预判后果，从而指导决策与 planning。

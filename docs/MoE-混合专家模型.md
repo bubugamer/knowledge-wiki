@@ -6,6 +6,7 @@ status: 草稿
 confidence: 共识
 tags: [MoE, 模型架构, 稀疏计算, DeepSeek]
 sources: []
+visibility: public
 ---
 
 > 一种稀疏计算架构——模型拥有大量参数，但每次推理只激活少数几个"专家"，实现"总参数很大，实际计算量没那么大"。

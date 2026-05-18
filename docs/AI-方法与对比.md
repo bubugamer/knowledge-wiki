@@ -3,6 +3,7 @@ title: "AI / 大模型 — 方法与对比"
 created: 2026-05-12
 last_updated: 2026-05-12
 type: topic
+visibility: public
 ---
 
 # 方法与对比

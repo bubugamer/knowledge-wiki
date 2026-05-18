@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [LLM, 表征, 自监督, CV]
 sources:
   - 02-Areas/LLM/133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42.md
+visibility: public
 ---
 
 > 表征学习 = 把数据映射到一个具有"良好性质"的空间，使下游任务变得容易。谢赛宁的核心 bet：**表征是世界模型最重要的一部分**——有了足够好的表征，语言模型会退化成一个 communication interface。

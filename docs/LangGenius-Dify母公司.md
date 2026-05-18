@@ -7,6 +7,7 @@ tags: [AI公司, 创业公司, 开源商业化]
 sources:
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研-整合版.md
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研2.md
+visibility: public
 ---
 
 > LangGenius 不是单一法人，而是一个跨法域运营的品牌/产品群，由中国经营主体苏州语灵、美国品牌主体 LangGenius, Inc.、日本子公司 LangGenius K.K. 三者共同构成。

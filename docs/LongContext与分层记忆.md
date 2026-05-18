@@ -8,6 +8,7 @@ tags: [LLM, LongContext, 记忆, 架构, Multi-Agent]
 sources:
   - 02-Areas/LLM/102. 和张祥雨聊，多模态研究的挣扎史和未来两年的2个"GPT-4时刻".md
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > **Long Context**（长上下文）≠ **Long-term Memory**（长期记忆）。主流做法是把 context window 做大，但"信息装得多"和"记忆层级化"是两回事。本页收录相关核心概念：**分层记忆**、**大海捞针误区**、**冯诺依曼 memory hierarchy**、**注意力转移**。

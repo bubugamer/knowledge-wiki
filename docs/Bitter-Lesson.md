@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [AI, 哲学, Scaling, Sutton]
 sources:
   - 02-Areas/LLM/133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42.md
+visibility: public
 ---
 
 > Richard Sutton 2019 年的博文 *The Bitter Lesson*：70 年 AI 史反复证明，**依赖算力的通用方法（search + learning）终将超越依赖人类领域知识的方法**。"苦涩"之处在于——研究者总想把自己理解的东西塞进系统，但这条路反复失败。

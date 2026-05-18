@@ -7,6 +7,7 @@ tags: [联络中心, CCaaS, 流程编排, IVR, Genesys]
 sources:
   - Genesys Cloud Resource Center (help.mypurecloud.com)
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/genesys_flow_types.xlsx
+visibility: public
 ---
 
 > Genesys Cloud Architect 按交互渠道和功能场景将流程划分为 15 种类型，每种类型内置了针对该场景的动作集、校验规则和安全策略。

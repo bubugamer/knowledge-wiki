@@ -7,6 +7,7 @@ confidence: 共识+专家观点
 tags: [机器人, 具身智能, 跨本体, Motion Transfer, DeepMind]
 sources:
   - 02-Areas/LLM/121. 对DeepMind谭捷的访谈：机器人、跨本体、世界模型、Gemini Robotics 1.5和Google.md
+visibility: public
 ---
 
 > 跨本体 = 同一个模型能在**不同形态的机器人**上运行（ALOHA 桌面双臂 / Franka 工业臂 / Unitree 人形腿 / 单臂 gripper / 五指灵巧手……）。它是机器人基座模型能否 scale 的关键——单本体数据永远凑不齐 GPT-3 需要的规模。

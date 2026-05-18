@@ -3,6 +3,7 @@ title: "联络中心 / CCaaS — 平台与架构"
 created: 2026-05-12
 last_updated: 2026-05-12
 type: topic
+visibility: public
 ---
 
 # 平台与架构

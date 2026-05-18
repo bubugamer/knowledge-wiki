@@ -3,6 +3,7 @@ title: "AI / 大模型 — 多模态"
 created: 2026-05-12
 last_updated: 2026-05-12
 type: topic
+visibility: public
 ---
 
 # 多模态

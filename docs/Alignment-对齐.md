@@ -7,6 +7,7 @@ confidence: 共识
 tags: [LLM, Alignment, RLHF, DPO, 安全]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > 对齐不提升模型"通用能力"，而是把输出行为从"能说"推向"会说"——让模型知道在多个合理答案中，哪一个**更应该被给出**。

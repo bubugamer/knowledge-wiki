@@ -7,6 +7,7 @@ confidence: 共识
 tags: [LLM, PEFT, LoRA, Adapter, 微调]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > PEFT 是企业微调 LLM 的默认范式。它冻结基础模型全部权重，只训练不到 1% 的新增参数，以 Adapter 的形式产出——由此打开了"多阶段、多任务、多版本"的工程管理空间。

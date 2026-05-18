@@ -7,6 +7,7 @@ confidence: 共识
 tags: [Agent, ReAct, 架构, Tool Use]
 sources:
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > ReAct（**Rea**soning + **Act**ing）= 让模型**交替产生"思考"和"动作"**的 Agent 架构。姚顺雨 2022 年提出。今天主流 Agent（OpenAI function calling、Anthropic tool use、Cursor、Devin）几乎都是 ReAct 变体。

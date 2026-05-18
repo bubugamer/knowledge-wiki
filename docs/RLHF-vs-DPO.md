@@ -9,6 +9,7 @@ sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
   - 02-Areas/LLM/102. 和张祥雨聊，多模态研究的挣扎史和未来两年的2个"GPT-4时刻".md
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > RLHF 与 DPO 是 [[Alignment-对齐]] 的两类主流实现。RLHF 经由奖励模型 + 强化学习，理论成熟但复杂；DPO 直接从偏好数据优化，简单稳定但对数据质量更敏感。

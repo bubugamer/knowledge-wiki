@@ -7,6 +7,7 @@ confidence: 专家观点
 tags: [Agent, RL, Reward, Benchmark, 概念]
 sources:
   - 02-Areas/LLM/115. 对OpenAI姚顺雨3小时访谈：6年Agent研究、人与系统、吞噬的边界、既单极又多元的世界.md
+visibility: public
 ---
 
 > **"AI 的下半场"**（The Second Half）是姚顺雨 2025-04 博文提出的命名，指 AI 研究重心从"造方法"转向"定义任务"的阶段划分。本页收录下半场语境里的几个常见术语：**Reward 三原则**、**Pass@k vs Pass@head k**、**Reliability vs Creativity**。

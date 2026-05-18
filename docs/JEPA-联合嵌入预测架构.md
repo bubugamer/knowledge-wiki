@@ -7,6 +7,7 @@ confidence: 专家观点
 tags: [LLM, JEPA, LeCun, 世界模型, 架构]
 sources:
   - 02-Areas/LLM/133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42.md
+visibility: public
 ---
 
 > JEPA = Yann LeCun 2022 年在 *A Path Towards Autonomous Intelligence* 中提出的架构。内核：**不在像素空间做生成，而在抽象表征空间做预测**。它是一套 Cognitive Architecture，不是单一算法。

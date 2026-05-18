@@ -3,6 +3,7 @@ title: "AI / 大模型 — 前沿议题"
 created: 2026-05-12
 last_updated: 2026-05-12
 type: topic
+visibility: public
 ---
 
 # 前沿议题与展望

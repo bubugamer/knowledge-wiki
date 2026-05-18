@@ -7,6 +7,7 @@ confidence: 共识
 tags: [LLM, RAG, 微调, 决策]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > 当需求是"让模型基于私有知识库回答"时，默认选 [[RAG-检索增强生成]]，而不是把知识训进模型。微调在 RAG 架构下依然有价值——但目的是**改行为**，不是**记知识**。

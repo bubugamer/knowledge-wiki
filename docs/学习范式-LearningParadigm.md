@@ -6,6 +6,7 @@ status: 草稿
 confidence: 共识
 tags: [AI, 学习范式, 机器学习]
 sources: []
+visibility: public
 ---
 
 > AI "如何学习"的七种主流范式——它们不是互相替代的关系，而是针对不同数据条件和目标的不同路线。

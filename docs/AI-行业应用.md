@@ -3,6 +3,7 @@ title: "AI / 大模型 — 行业应用"
 created: 2026-05-12
 last_updated: 2026-05-12
 type: topic
+visibility: public
 ---
 
 # 行业应用

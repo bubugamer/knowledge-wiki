@@ -7,6 +7,7 @@ confidence: 共识
 tags: [LLM, RAG, 知识库, 向量检索]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > 对于"让模型基于私有知识库回答"这个最常见的企业需求，正确答案**不是训练，而是 RAG**。RAG 的本质是在生成前先检索、再把相关信息注入 Prompt、强制模型基于它作答。

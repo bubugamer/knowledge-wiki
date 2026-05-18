@@ -7,6 +7,7 @@ confidence: 共识
 tags: [LLM, SFT, 微调]
 sources:
   - 02-Areas/LLM/大型语言模型从0到1白皮书v2.md
+visibility: public
 ---
 
 > SFT 把"只会续写文本"的语言模型改造成"能听指令、按对话形式回答"的助理。它是人类第一次以逐条样本形式深度介入的阶段，核心工作是**写答案**。

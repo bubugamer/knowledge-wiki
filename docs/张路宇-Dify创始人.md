@@ -8,6 +8,7 @@ sources:
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研-整合版.md
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研1.md
   - 03-Resources/articles/Research/深度调研文档 from gpt/dify调研2.md
+visibility: public
 ---
 
 > 张路宇（Luyu Zhang），1991年生，Dify / LangGenius 创始人兼 CEO，初中辍学自学编程出身，曾创办"飞蛾"（被腾讯收购），前腾讯云 CODING 协同产品总监。

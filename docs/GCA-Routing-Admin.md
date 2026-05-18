@@ -8,6 +8,7 @@ sources:
   - Genesys Cloud 官方文档
   - Genesys Cloud Resource Center (Release Notes 2025-08 ~ 2026-03)
   - SynologyDrive/archive/work-mx/02-Areas/gca调研/ 下的调研文档
+visibility: public
 ---
 
 > Admin > Routing 是 Genesys Cloud 中决定"交互何时、去哪、给谁"的统一控制面板。它将号码/地址绑定到 Architect Flow，并通过日程、紧急覆盖、ACD 策略控制交互的完整路由路径。
