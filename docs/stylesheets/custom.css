@@ -14,11 +14,13 @@
   z-index: 2;
 }
 
-/* Prevent left sidebar from extending into footer area */
-.md-sidebar--primary {
-  position: sticky;
-  top: 0;
-  max-height: 100vh;
+/* Prevent the desktop sidebar from extending into the footer area. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+  }
 }
 
 /* Ensure content area has enough bottom margin */

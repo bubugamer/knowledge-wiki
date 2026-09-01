@@ -73,6 +73,7 @@ nav:
       - AI技术体系总览: AI技术体系总览.md
       - 学习范式: 学习范式-LearningParadigm.md
       - 模型架构: 模型架构-ModelArchitecture.md
+      - Transformer 与注意力机制: Transformer与注意力机制.md
       - MoE-混合专家模型: MoE-混合专家模型.md
       - AI系统形态: AI系统形态-SystemArchitecture.md
       - LLM训练四阶段总览: LLM训练四阶段总览.md

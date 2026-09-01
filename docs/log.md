@@ -1,5 +1,11 @@
 # Wiki 活动日志
 
+## [2026-09-01] ingest | Transformer 与注意力机制共读导引
+
+- 新建：Transformer 与注意力机制（Q/K/V、注意力公式四步、多头注意力、复杂度、原始 Transformer 结构、网页逐节中文导读、论文阅读顺序）
+- 更新：AI-总览与框架、模型架构、mkdocs.yml nav
+- 来源：k-a.in《Transformer Code Breakdown Line-By-Line》、Vaswani 等《Attention Is All You Need》及用户提供的公式截图
+
 ## [2026-05-15] query | GCA Runtime Execution 异常处理体系重构
 
 - 更新：GCA-Runtime-Execution（将原第 1/2/3 节合并为"异常处理体系"一级标题下的三个子节；新增开篇说明：事件系统专用于异常场景，正常流程靠 Action 顺序执行；补充官方文档原文引用）

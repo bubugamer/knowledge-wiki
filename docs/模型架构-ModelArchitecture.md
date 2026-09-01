@@ -1,7 +1,7 @@
 ---
 title: 模型架构（Model Architecture）
 created: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-09-01
 status: 草稿
 confidence: 共识
 tags: [AI, 模型架构, 神经网络]
@@ -39,6 +39,8 @@ $$\mathrm{Attention}(Q,K,V)=\mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 
 核心洞察：通过 Q/K 点积计算 token 间的相关度，加权聚合 V。复杂度 O(n²)，这是长序列的瓶颈。
 
+如果这句话和公式仍然显得抽象，先读 [[Transformer与注意力机制]]。那里从“查资料”这个日常动作开始，逐步解释 Q、K、V、点积、softmax、缩放和加权平均分别在做什么。
+
 **Diffusion 前向过程**:
 
 $$x_t = \sqrt{1-\beta_t} \cdot x_{t-1} + \sqrt{\beta_t} \cdot \epsilon$$
@@ -61,6 +63,7 @@ $$x_t = \sqrt{1-\beta_t} \cdot x_{t-1} + \sqrt{\beta_t} \cdot \epsilon$$
 ## 相关页面
 
 - [[AI技术体系总览]] — 本页所属的九层框架
+- [[Transformer与注意力机制]] — 从注意力公式进入 Transformer 的零基础共读导引
 - [[表征学习-RepresentationLearning]] — VAE 和 SSL 路线的深入探讨
 - [[JEPA-联合嵌入预测架构]] — 在表征空间做预测的新架构思路
 - [[NTP的本质缺陷]] — Transformer + NTP 的固有限制
