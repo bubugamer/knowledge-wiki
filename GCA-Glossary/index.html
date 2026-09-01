@@ -1,0 +1,4126 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="个人知识 Wiki —— 持续维护的结构化知识库">
+      
+      
+      
+      
+        <link rel="prev" href="../GCA-Runtime-Execution/">
+      
+      
+        <link rel="next" href="../GCA-vs-Dify-Workflow/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Genesys Cloud Architect — 术语表 - Knowledge Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Knowledge Wiki" class="md-header__button md-logo" aria-label="Knowledge Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Genesys Cloud Architect — 术语表
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Knowledge Wiki" class="md-nav__button md-logo" aria-label="Knowledge Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Knowledge Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人工智能 / 大模型
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    人工智能 / 大模型
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总览与框架
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    总览与框架
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E6%80%BB%E8%A7%88%E4%B8%8E%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB%E6%80%BB%E8%A7%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI技术体系总览
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%A6%E4%B9%A0%E8%8C%83%E5%BC%8F-LearningParadigm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    学习范式
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84-ModelArchitecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模型架构
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Transformer%E4%B8%8E%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformer 与注意力机制
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MoE-%E6%B7%B7%E5%90%88%E4%B8%93%E5%AE%B6%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MoE-混合专家模型
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI%E7%B3%BB%E7%BB%9F%E5%BD%A2%E6%80%81-SystemArchitecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI系统形态
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LLM%E8%AE%AD%E7%BB%83%E5%9B%9B%E9%98%B6%E6%AE%B5%E6%80%BB%E8%A7%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM训练四阶段总览
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenAI%E4%BA%94%E7%BA%A7%E6%99%BA%E8%83%BD%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI五级智能分类
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Agent%E4%B8%89%E9%98%B6%E6%AE%B5%E6%BC%94%E5%8F%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent三阶段演变
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    训练阶段
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    训练阶段
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E8%AE%AD%E7%BB%83%E9%98%B6%E6%AE%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A2%84%E8%AE%AD%E7%BB%83-Pretraining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    预训练
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SFT-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%BE%AE%E8%B0%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SFT-有监督微调
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alignment-%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alignment-对齐
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8E%A8%E7%90%86%E8%AE%AD%E7%BB%83-CoT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推理训练-CoT
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方法与对比
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    方法与对比
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E6%96%B9%E6%B3%95%E4%B8%8E%E5%AF%B9%E6%AF%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RLHF-vs-DPO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RLHF vs DPO
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PEFT-LoRA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PEFT-LoRA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%8B%E5%8D%8A%E5%9C%BA-%E4%BB%BB%E5%8A%A1%E4%B8%8EReward%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    下半场-任务与Reward设计
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A1%A8%E5%BE%81%E5%AD%A6%E4%B9%A0-RepresentationLearning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表征学习
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    应用架构
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    应用架构
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RAG-%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG-检索增强生成
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93-VectorDatabase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    向量数据库
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BE%AE%E8%B0%83vs%20RAG-%E5%86%B3%E7%AD%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    微调 vs RAG 决策
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REACT-%E6%8E%A8%E7%90%86%E4%B8%8E%E8%A1%8C%E5%8A%A8%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REACT-推理与行动架构
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code-AI%E7%9A%84Affordance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code-AI的Affordance
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JEPA-%E8%81%94%E5%90%88%E5%B5%8C%E5%85%A5%E9%A2%84%E6%B5%8B%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JEPA-联合嵌入预测架构
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多模态
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    多模态
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E5%A4%9A%E6%A8%A1%E6%80%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88-%E7%94%9F%E6%88%90%E7%90%86%E8%A7%A3%E5%89%B2%E8%A3%82/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多模态融合-生成理解割裂
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A7%86%E8%A7%89%E7%A9%BA%E9%97%B4%E6%8E%A8%E7%90%86-%E5%A4%9A%E6%A8%A1%E6%80%81GPT-4%E6%97%B6%E5%88%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    视觉空间推理
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    行业应用
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    行业应用
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机器人与具身智能
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    机器人与具身智能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD-EmbodiedAI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    具身智能
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VLA-%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLA-视觉语言动作模型
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B7%A8%E6%9C%AC%E4%BD%93-CrossEmbodiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    跨本体
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sim-to-Real/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sim-to-Real
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_3" id="__nav_2_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量化交易
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量化交易
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E4%B8%AD%E7%9A%84AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量化交易中的AI
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前沿议题
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    前沿议题
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E5%89%8D%E6%B2%BF%E8%AE%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NTP%E7%9A%84%E6%9C%AC%E8%B4%A8%E7%BC%BA%E9%99%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NTP的本质缺陷
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LongContext%E4%B8%8E%E5%88%86%E5%B1%82%E8%AE%B0%E5%BF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LongContext与分层记忆
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%87%AA%E4%B8%BB%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%9C%A8%E7%BA%BF%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自主学习与在线学习
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B-WorldModel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界模型
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    术语与参考
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    术语与参考
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI-%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LLM%E6%9C%AF%E8%AF%AD%E9%80%9F%E6%9F%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM术语速查
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bitter-Lesson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bitter Lesson
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Moravec%E6%82%96%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Moravec悖论
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    联络中心 / CCaaS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    联络中心 / CCaaS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    平台与架构
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    平台与架构
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CCaaS-%E5%B9%B3%E5%8F%B0%E4%B8%8E%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Genesys Cloud Architect
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Genesys Cloud Architect
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Genesys-Cloud-Architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总览
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Flow-Types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flow Types
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actions
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Resources-Permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources & Permissions
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Routing-Admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Routing Admin
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-Runtime-Execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime Execution
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平台与产品
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flow（流程）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action（动作/组件）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变量与数据
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        路由与 ACD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源与权限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时与可观测性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-nlu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI / NLU
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通用缩写
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GCA-vs-Dify-Workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCA vs Dify Workflow
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI 产品与公司
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI 产品与公司
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI%E4%BA%A7%E5%93%81%E4%B8%8E%E5%85%AC%E5%8F%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主题概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dify-%E5%BC%80%E6%BA%90LLM%E5%BA%94%E7%94%A8%E5%B9%B3%E5%8F%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dify-开源LLM应用平台
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LangGenius-Dify%E6%AF%8D%E5%85%AC%E5%8F%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangGenius-Dify母公司
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%A0%E8%B7%AF%E5%AE%87-Dify%E5%88%9B%E5%A7%8B%E4%BA%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    张路宇-Dify创始人
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--草稿"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    活动日志
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平台与产品
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flow（流程）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action（动作/组件）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变量与数据
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        路由与 ACD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源与权限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时与可观测性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-nlu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI / NLU
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通用缩写
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Glossary</h1>
+
+<blockquote>
+<p>GCA 相关核心术语的快速解释与跳转索引，按功能域分组。</p>
+</blockquote>
+<h2 id="_1">平台与产品<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Genesys Cloud CX</strong></td>
+<td>Genesys 的云原生 CCaaS 平台，基于 AWS 微服务架构，提供语音/数字全渠道联络中心能力</td>
+<td><a href="../GCA-Runtime-Execution/#底层运行时架构">GCA-Runtime-Execution#底层运行时架构</a></td>
+</tr>
+<tr>
+<td><strong>Architect</strong></td>
+<td>Genesys Cloud 的可视化流程编排工具（Flow Designer），用于拖拽式设计 IVR、Bot、数字渠道交互和后台工作流</td>
+<td><a href="../Genesys-Cloud-Architect/">Genesys-Cloud-Architect</a></td>
+</tr>
+<tr>
+<td><strong>Archy CLI</strong></td>
+<td>Architect 的命令行接口，可用于批量导出/导入/部署 Flow，支持 YAML 格式定义</td>
+<td><a href="../GCA-Runtime-Execution/#超时机制">GCA-Runtime-Execution#超时机制</a></td>
+</tr>
+<tr>
+<td><strong>AppFoundry</strong></td>
+<td>Genesys Cloud 的应用市场，第三方集成和预构建应用的分发平台</td>
+<td><a href="../GCA-Resources-Permissions/">GCA-Resources-Permissions</a></td>
+</tr>
+<tr>
+<td><strong>Edge</strong></td>
+<td>Genesys Cloud 的本地媒体网关设备，负责语音媒体处理（PSTN 接入、编解码、录音）</td>
+<td><a href="../GCA-Runtime-Execution/#底层运行时架构">GCA-Runtime-Execution#底层运行时架构</a></td>
+</tr>
+<tr>
+<td><strong>VXML Engine</strong></td>
+<td>Architect 中语音 Flow 的底层执行引擎，基于 VoiceXML 标准处理语音交互</td>
+<td><a href="../GCA-Runtime-Execution/#冷启动">GCA-Runtime-Execution#冷启动</a></td>
+</tr>
+<tr>
+<td><strong>Global Media Fabric</strong></td>
+<td>跨区域媒体路由网络，将语音/视频流路由到离用户最近的 AWS Region 以降低延迟</td>
+<td><a href="../GCA-Runtime-Execution/#地理分布">GCA-Runtime-Execution#地理分布</a></td>
+</tr>
+<tr>
+<td><strong>Dialog Engine</strong></td>
+<td>Genesys 内置的 NLU 引擎，为 Bot Flow 提供意图识别和槽位提取能力</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="flow">Flow（流程）<a class="headerlink" href="#flow" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flow</strong></td>
+<td>Architect 中的基本编排单元，定义一个完整的交互处理逻辑。每种渠道/场景对应不同的 Flow 类型</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Flow Instance</strong></td>
+<td>Flow 的运行时实例。每个交互（通话/聊天/邮件）独立执行一个实例，实例间天然隔离</td>
+<td><a href="../GCA-Runtime-Execution/#实例隔离">GCA-Runtime-Execution#实例隔离</a></td>
+</tr>
+<tr>
+<td><strong>Inbound Call Flow</strong></td>
+<td>处理来电的主 IVR 流程，从接通到路由/断开的全链路逻辑</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>In-Queue Call Flow</strong></td>
+<td>客户在排队等待时执行的流程（播放等待音乐、预计等待时间、回拨选项）</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Secure Call Flow</strong></td>
+<td>用于采集敏感数据（信用卡号等）的 PCI 合规流程，所有数据加密处理，转接失败直接断开</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Bot Flow</strong></td>
+<td>基于 NLU 的多轮对话流程（语音+文本），使用 Intent/Slot 模型驱动</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Digital Bot Flow</strong></td>
+<td>纯文本渠道的 Bot 流程（Chat/Message），不涉及语音/ASR</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Common Module</strong></td>
+<td>可复用的子流程模块，被多个 Flow 引用。被引用时锁定版本快照，主 Flow 需重新发布才能获取模块新版</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Workflow</strong></td>
+<td>事件驱动的后台自动化流程，无实时交互连接，可长时间运行</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Workitem Flow</strong></td>
+<td>管理工单（Workitem）生命周期的流程</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="action">Action（动作/组件）<a class="headerlink" href="#action" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action</strong></td>
+<td>Flow 中的最小可执行单元（节点），每种 Action 对应一种操作（交互/数据/路由/逻辑等）</td>
+<td><a href="../GCA-Actions/">GCA-Actions</a></td>
+</tr>
+<tr>
+<td><strong>Data Action</strong></td>
+<td>调用外部 API 或 Genesys Cloud 内部 API 的集成组件。有 Success / Failure / Timeout 三条输出分支</td>
+<td><a href="../GCA-Actions/#数据操作与集成">GCA-Actions#数据操作与集成</a></td>
+</tr>
+<tr>
+<td><strong>Transfer to ACD</strong></td>
+<td>将交互转接到 ACD 队列，由路由引擎分配给合适的座席</td>
+<td><a href="../GCA-Actions/#路由与转接">GCA-Actions#路由与转接</a></td>
+</tr>
+<tr>
+<td><strong>Blind Transfer</strong></td>
+<td>直接转接（不保持原通话），Secure Call Flow 中强制使用此方式</td>
+<td><a href="../GCA-Runtime-Execution/#secure-flow-特殊行为">GCA-Runtime-Execution#Secure-Flow-特殊行为</a></td>
+</tr>
+<tr>
+<td><strong>Decision</strong></td>
+<td>条件分支节点，评估布尔表达式后走 True 或 False 路径</td>
+<td><a href="../GCA-Actions/#逻辑与分支">GCA-Actions#逻辑与分支</a></td>
+</tr>
+<tr>
+<td><strong>Switch</strong></td>
+<td>多路分支节点，类似 switch-case 语句</td>
+<td><a href="../GCA-Actions/#逻辑与分支">GCA-Actions#逻辑与分支</a></td>
+</tr>
+<tr>
+<td><strong>Loop</strong></td>
+<td>循环节点，常用于实现 Data Action 重试逻辑</td>
+<td><a href="../GCA-Actions/#逻辑与分支">GCA-Actions#逻辑与分支</a></td>
+</tr>
+<tr>
+<td><strong>Evaluate Schedule</strong></td>
+<td>评估当前时间是否匹配日程规则（工作时间/节假日），返回匹配的日程区间</td>
+<td><a href="../GCA-Actions/#逻辑与分支">GCA-Actions#逻辑与分支</a></td>
+</tr>
+<tr>
+<td><strong>Collect Input</strong></td>
+<td>语音流程中采集 DTMF 按键输入的节点</td>
+<td><a href="../GCA-Actions/#用户交互">GCA-Actions#用户交互</a></td>
+</tr>
+<tr>
+<td><strong>Communicate</strong></td>
+<td>向客户播放/发送消息的节点（语音流中为 TTS/音频，数字流中为文本）</td>
+<td><a href="../GCA-Actions/#用户交互">GCA-Actions#用户交互</a></td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>Flow 内的子过程（Sub-procedure），用于组织逻辑分组。Task 变量作用域仅限该 Task</td>
+<td><a href="../GCA-Actions/#流程管理">GCA-Actions#流程管理</a></td>
+</tr>
+<tr>
+<td><strong>Reusable Task</strong></td>
+<td>可被多个地方调用的 Task，常用于 Error Handler 的跳转目标</td>
+<td><a href="../GCA-Runtime-Execution/#事件处理层级">GCA-Runtime-Execution#事件处理层级</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">变量与数据<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flow Variable</strong></td>
+<td>作用域为整个 Flow 的变量，所有 Task 内均可访问</td>
+<td><a href="../GCA-Variables/#变量分类与作用域">GCA-Variables#变量分类与作用域</a></td>
+</tr>
+<tr>
+<td><strong>Task Variable</strong></td>
+<td>作用域仅限声明所在 Task 的变量</td>
+<td><a href="../GCA-Variables/#变量分类与作用域">GCA-Variables#变量分类与作用域</a></td>
+</tr>
+<tr>
+<td><strong>Input/Output Variable</strong></td>
+<td>Flow 的对外接口参数，用于 Flow 间传递数据（如 Common Module 的入参/出参）</td>
+<td><a href="../GCA-Variables/#变量分类与作用域">GCA-Variables#变量分类与作用域</a></td>
+</tr>
+<tr>
+<td><strong>Participant Data</strong></td>
+<td>附着在交互参与方（客户/座席/Flow）上的键值对数据，跨 Flow 持久存在直到交互结束</td>
+<td><a href="../GCA-Variables/#变量分类与作用域">GCA-Variables#变量分类与作用域</a></td>
+</tr>
+<tr>
+<td><strong>Secure Variable</strong></td>
+<td>标记为安全的变量，禁止录音/日志记录，仅在 Secure Call Flow 中有效</td>
+<td><a href="../GCA-Variables/#变量配置选项">GCA-Variables#变量配置选项</a></td>
+</tr>
+<tr>
+<td><strong>NOT_SET</strong></td>
+<td>Genesys 表达式系统中的空值标记，类似其他语言的 null/nil</td>
+<td><a href="../GCA-Variables/#数据类型体系">GCA-Variables#数据类型体系</a></td>
+</tr>
+<tr>
+<td><strong>Collection</strong></td>
+<td>有序列表类型，类似数组，支持 Count / GetAt / AddItem 等操作</td>
+<td><a href="../GCA-Variables/#数据类型体系">GCA-Variables#数据类型体系</a></td>
+</tr>
+<tr>
+<td><strong>Expression</strong></td>
+<td>Architect 的内置表达式语言，用于变量赋值、条件判断、数据转换（~70 个内置函数）</td>
+<td><a href="../GCA-Variables/#表达式系统">GCA-Variables#表达式系统</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="acd">路由与 ACD<a class="headerlink" href="#acd" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ACD</strong></td>
+<td>Automatic Call Distribution，自动呼叫分配系统，按预设策略将交互路由给合适的座席</td>
+<td><a href="../GCA-Routing-Admin/#acd-路由策略">GCA-Routing-Admin#ACD-路由策略</a></td>
+</tr>
+<tr>
+<td><strong>Queue</strong></td>
+<td>ACD 队列，座席按技能/语言分组的逻辑容器，交互进入队列后等待分配</td>
+<td><a href="../GCA-Routing-Admin/">GCA-Routing-Admin</a></td>
+</tr>
+<tr>
+<td><strong>Bullseye Routing</strong></td>
+<td>靶心路由策略——从最严格的技能匹配开始，逐圈扩大匹配范围直到找到可用座席</td>
+<td><a href="../GCA-Routing-Admin/#acd-路由策略">GCA-Routing-Admin#ACD-路由策略</a></td>
+</tr>
+<tr>
+<td><strong>Predictive Routing</strong></td>
+<td>AI 预测路由，基于历史数据预测最优座席匹配（按 KPI 优化），已 GA</td>
+<td><a href="../GCA-Routing-Admin/#predictive-routing">GCA-Routing-Admin#Predictive-Routing</a></td>
+</tr>
+<tr>
+<td><strong>Preferred Agent</strong></td>
+<td>优先分配给指定座席，超时后回退到常规路由</td>
+<td><a href="../GCA-Routing-Admin/#acd-路由策略">GCA-Routing-Admin#ACD-路由策略</a></td>
+</tr>
+<tr>
+<td><strong>Conditional Group Routing (CGR)</strong></td>
+<td>根据队列实时状态（排队人数/等待时长）触发条件规则的路由策略</td>
+<td><a href="../GCA-Routing-Admin/#acd-路由策略">GCA-Routing-Admin#ACD-路由策略</a></td>
+</tr>
+<tr>
+<td><strong>Direct Routing</strong></td>
+<td>绕过 ACD 队列，直接将交互路由到特定座席</td>
+<td><a href="../GCA-Routing-Admin/#direct-routing">GCA-Routing-Admin#Direct-Routing</a></td>
+</tr>
+<tr>
+<td><strong>Schedule</strong></td>
+<td>日程规则，定义工作时间/非工作时间/节假日，用于路由分流</td>
+<td><a href="../GCA-Routing-Admin/#schedules">GCA-Routing-Admin#Schedules</a></td>
+</tr>
+<tr>
+<td><strong>Schedule Group</strong></td>
+<td>日程组，将多个 Schedule 组合后与 Flow 关联</td>
+<td><a href="../GCA-Routing-Admin/#schedules">GCA-Routing-Admin#Schedules</a></td>
+</tr>
+<tr>
+<td><strong>Emergency Group</strong></td>
+<td>紧急覆盖开关，激活后直接跳转到预设 Flow，优先级最高（高于 Schedule）</td>
+<td><a href="../GCA-Routing-Admin/#emergency-groups">GCA-Routing-Admin#Emergency-Groups</a></td>
+</tr>
+<tr>
+<td><strong>DID</strong></td>
+<td>Direct Inward Dialing，直拨号码，映射到 Call Routing 条目</td>
+<td><a href="../GCA-Routing-Admin/#call-routing">GCA-Routing-Admin#Call-Routing</a></td>
+</tr>
+<tr>
+<td><strong>ANI</strong></td>
+<td>Automatic Number Identification，来电号码（主叫号码识别）</td>
+<td><a href="../GCA-Variables/#系统预置变量">GCA-Variables#系统预置变量</a></td>
+</tr>
+<tr>
+<td><strong>DNIS</strong></td>
+<td>Dialed Number Identification Service，被叫号码识别</td>
+<td><a href="../GCA-Variables/#系统预置变量">GCA-Variables#系统预置变量</a></td>
+</tr>
+<tr>
+<td><strong>Skill</strong></td>
+<td>座席技能标签（如语言、产品线），用于 ACD 技能匹配路由</td>
+<td><a href="../GCA-Routing-Admin/#acd-路由策略">GCA-Routing-Admin#ACD-路由策略</a></td>
+</tr>
+<tr>
+<td><strong>WrapupCode</strong></td>
+<td>话后处理代码，座席在交互结束后标记的分类标签</td>
+<td><a href="../GCA-Variables/#数据类型体系">GCA-Variables#数据类型体系</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">资源与权限<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Division</strong></td>
+<td>Genesys Cloud 的访问控制分区单元，资源（Flow/Queue/User 等）归属于 Division，权限按 Division 授予</td>
+<td><a href="../GCA-Resources-Permissions/#division-分区机制">GCA-Resources-Permissions#Division-分区机制</a></td>
+</tr>
+<tr>
+<td><strong>Home Division</strong></td>
+<td>每个 Org 的默认 Division，新建资源默认归入 Home Division</td>
+<td><a href="../GCA-Resources-Permissions/#division-分区机制">GCA-Resources-Permissions#Division-分区机制</a></td>
+</tr>
+<tr>
+<td><strong>All Division</strong></td>
+<td>2026 新增的特殊 Division，允许某些管理操作跨所有 Division 执行</td>
+<td><a href="../GCA-Resources-Permissions/#division-分区机制">GCA-Resources-Permissions#Division-分区机制</a></td>
+</tr>
+<tr>
+<td><strong>RBAC</strong></td>
+<td>Role-Based Access Control，基于角色的权限控制。Genesys Cloud 通过 角色 × Division 授权</td>
+<td><a href="../GCA-Resources-Permissions/#rbac-权限模型">GCA-Resources-Permissions#RBAC-权限模型</a></td>
+</tr>
+<tr>
+<td><strong>Data Table</strong></td>
+<td>Architect 内的键值查找表，类似轻量数据库，上限 200 个/Org</td>
+<td><a href="../GCA-Resources-Permissions/#资源类型详解">GCA-Resources-Permissions#资源类型详解</a></td>
+</tr>
+<tr>
+<td><strong>Prompt</strong></td>
+<td>预录音频或 TTS 文本，分 System Prompt（系统内置）和 User Prompt（用户自定义）</td>
+<td><a href="../GCA-Resources-Permissions/#资源类型详解">GCA-Resources-Permissions#资源类型详解</a></td>
+</tr>
+<tr>
+<td><strong>Script</strong></td>
+<td>Scripter 脚本，定义座席桌面的弹屏布局（Screen Pop）和交互引导</td>
+<td><a href="../GCA-Resources-Permissions/#资源类型详解">GCA-Resources-Permissions#资源类型详解</a></td>
+</tr>
+<tr>
+<td><strong>Flow Outcome</strong></td>
+<td>自助服务结果追踪标记（成功/失败），上限 100 个/Org，不可删除</td>
+<td><a href="../GCA-Resources-Permissions/#资源类型详解">GCA-Resources-Permissions#资源类型详解</a></td>
+</tr>
+<tr>
+<td><strong>Flow Milestone</strong></td>
+<td>Outcome 内的细粒度里程碑标记，上限 1,000 个/Org</td>
+<td><a href="../GCA-Resources-Permissions/#资源类型详解">GCA-Resources-Permissions#资源类型详解</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">运行时与可观测性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action 执行上限</strong></td>
+<td>每个 Flow 实例最多执行 10,000 个 Action，超出后触发 Error Event Handler（额外 1,000 配额），绝对上限后 Silent Disconnect</td>
+<td><a href="../GCA-Runtime-Execution/#action-执行限制">GCA-Runtime-Execution#Action-执行限制</a></td>
+</tr>
+<tr>
+<td><strong>Silent Disconnect</strong></td>
+<td>超出绝对 Action 上限后的系统行为——无提示直接挂断</td>
+<td><a href="../GCA-Runtime-Execution/#action-执行限制">GCA-Runtime-Execution#Action-执行限制</a></td>
+</tr>
+<tr>
+<td><strong>Error Event</strong></td>
+<td>未捕获运行时错误时触发的全局事件，可配置处理方式（Disconnect / Transfer / Jump）</td>
+<td><a href="../GCA-Runtime-Execution/#事件类型">GCA-Runtime-Execution#事件类型</a></td>
+</tr>
+<tr>
+<td><strong>Disconnect Event</strong></td>
+<td>客户或系统侧断开连接时触发的事件（仅限有实时连接的 Flow 类型）</td>
+<td><a href="../GCA-Runtime-Execution/#事件类型">GCA-Runtime-Execution#事件类型</a></td>
+</tr>
+<tr>
+<td><strong>Recognition Failure Event</strong></td>
+<td>Bot Flow 中 NLU 无法识别客户回复时触发的事件</td>
+<td><a href="../GCA-Runtime-Execution/#事件类型">GCA-Runtime-Execution#事件类型</a></td>
+</tr>
+<tr>
+<td><strong>Failure Output</strong></td>
+<td>Action 的失败输出分支，类似 try-catch 的异常路径</td>
+<td><a href="../GCA-Runtime-Execution/#failure-output-分支">GCA-Runtime-Execution#Failure-Output-分支</a></td>
+</tr>
+<tr>
+<td><strong>Debug Mode</strong></td>
+<td>Architect 的调试模式，用真实通话测试未发布的 Flow 版本，提供变量追踪和执行路径信息</td>
+<td><a href="../GCA-Runtime-Execution/#debug-模式">GCA-Runtime-Execution#Debug-模式</a></td>
+</tr>
+<tr>
+<td><strong>Flow Execution History</strong></td>
+<td>Flow 的历史执行数据（默认关闭），分 4 级采集深度（Base / Notes / Verbose Notes / All）</td>
+<td><a href="../GCA-Runtime-Execution/#flow-执行历史">GCA-Runtime-Execution#Flow-执行历史</a></td>
+</tr>
+<tr>
+<td><strong>Replay Mode</strong></td>
+<td>在 Architect UI 中回放 Flow 执行过程，支持断点和变量追踪</td>
+<td><a href="../GCA-Runtime-Execution/#flow-执行历史">GCA-Runtime-Execution#Flow-执行历史</a></td>
+</tr>
+<tr>
+<td><strong>Core Region</strong></td>
+<td>每个 Org 绑定的主 AWS Region（3 AZ，Active/Active/Active），Flow 逻辑在此执行</td>
+<td><a href="../GCA-Runtime-Execution/#地理分布">GCA-Runtime-Execution#地理分布</a></td>
+</tr>
+<tr>
+<td><strong>Satellite Media Region</strong></td>
+<td>通过 Global Media Fabric 路由媒体流到离用户最近的区域</td>
+<td><a href="../GCA-Runtime-Execution/#地理分布">GCA-Runtime-Execution#地理分布</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-nlu">AI / NLU<a class="headerlink" href="#ai-nlu" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NLU</strong></td>
+<td>Natural Language Understanding，自然语言理解引擎，Bot Flow 的核心 AI 能力</td>
+<td><a href="../GCA-Actions/#ai-nlu">GCA-Actions#AI-NLU</a></td>
+</tr>
+<tr>
+<td><strong>Intent</strong></td>
+<td>用户意图，NLU 识别用户输入后匹配的目标动作类别</td>
+<td><a href="../GCA-Actions/#ai-nlu">GCA-Actions#AI-NLU</a></td>
+</tr>
+<tr>
+<td><strong>Slot</strong></td>
+<td>意图参数（槽位），从用户输入中提取的结构化信息（如日期、金额、产品名）</td>
+<td><a href="../GCA-Actions/#ai-nlu">GCA-Actions#AI-NLU</a></td>
+</tr>
+<tr>
+<td><strong>ASR</strong></td>
+<td>Automatic Speech Recognition，自动语音识别，将语音转为文本</td>
+<td><a href="../GCA-Variables/#系统预置变量">GCA-Variables#系统预置变量</a></td>
+</tr>
+<tr>
+<td><strong>TTS</strong></td>
+<td>Text-to-Speech，文本转语音合成</td>
+<td><a href="../GCA-Flow-Types/">GCA-Flow-Types</a></td>
+</tr>
+<tr>
+<td><strong>Intent Miner</strong></td>
+<td>Genesys 的意图挖掘工具，从历史交互数据中自动发现常见意图模式</td>
+<td><a href="../GCA-Actions/#ai-nlu">GCA-Actions#AI-NLU</a></td>
+</tr>
+<tr>
+<td><strong>Knowledge</strong></td>
+<td>Architect 中的知识库集成，用于 FAQ 自动问答</td>
+<td><a href="../GCA-Actions/#ai-nlu">GCA-Actions#AI-NLU</a></td>
+</tr>
+<tr>
+<td><strong>Agent Escalation Event</strong></td>
+<td>Bot Flow 检测到客户希望转人工时自动触发的事件</td>
+<td><a href="../GCA-Runtime-Execution/#事件类型">GCA-Runtime-Execution#事件类型</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">通用缩写<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>全称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CCaaS</strong></td>
+<td>Contact Center as a Service</td>
+<td>云联络中心即服务</td>
+</tr>
+<tr>
+<td><strong>IVR</strong></td>
+<td>Interactive Voice Response</td>
+<td>交互式语音应答</td>
+</tr>
+<tr>
+<td><strong>PCI DSS</strong></td>
+<td>Payment Card Industry Data Security Standard</td>
+<td>支付卡行业数据安全标准</td>
+</tr>
+<tr>
+<td><strong>DTMF</strong></td>
+<td>Dual-Tone Multi-Frequency</td>
+<td>双音多频（电话按键音信号）</td>
+</tr>
+<tr>
+<td><strong>SLA</strong></td>
+<td>Service Level Agreement</td>
+<td>服务级别协议</td>
+</tr>
+<tr>
+<td><strong>AHT</strong></td>
+<td>Average Handle Time</td>
+<td>平均处理时长</td>
+</tr>
+<tr>
+<td><strong>E.164</strong></td>
+<td>ITU-T E.164</td>
+<td>国际电话号码格式标准（如 +8613800138000）</td>
+</tr>
+<tr>
+<td><strong>UUI</strong></td>
+<td>User-to-User Information</td>
+<td>用户到用户信息（SIP 头部携带的自定义数据）</td>
+</tr>
+<tr>
+<td><strong>PSTN</strong></td>
+<td>Public Switched Telephone Network</td>
+<td>公共交换电话网</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-pages">Related Pages<a class="headerlink" href="#related-pages" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Genesys-Cloud-Architect/">Genesys-Cloud-Architect</a> — Architect 总览</li>
+<li><a href="../GCA-Flow-Types/">GCA-Flow-Types</a> — Flow 类型详解</li>
+<li><a href="../GCA-Actions/">GCA-Actions</a> — 组件（Action）分类详解</li>
+<li><a href="../GCA-Variables/">GCA-Variables</a> — 变量与表达式体系</li>
+<li><a href="../GCA-Resources-Permissions/">GCA-Resources-Permissions</a> — 资源类型与权限管理</li>
+<li><a href="../GCA-Routing-Admin/">GCA-Routing-Admin</a> — 路由配置与 ACD 策略</li>
+<li><a href="../GCA-Runtime-Execution/">GCA-Runtime-Execution</a> — 运行时执行架构</li>
+<li><a href="../CCaaS-%E5%B9%B3%E5%8F%B0%E4%B8%8E%E6%9E%B6%E6%9E%84/">CCaaS-平台与架构</a> — 所属主题页</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

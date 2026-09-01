@@ -1,0 +1,29 @@
+/* Hide status icons in nav (from frontmatter status field) */
+.md-status {
+  display: none;
+}
+
+/* Fix footer overlapping with sidebar */
+.md-footer {
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+
+.md-sidebar {
+  z-index: 2;
+}
+
+/* Prevent the desktop sidebar from extending into the footer area. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+  }
+}
+
+/* Ensure content area has enough bottom margin */
+.md-content {
+  margin-bottom: 2rem;
+}
